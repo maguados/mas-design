@@ -1,0 +1,74 @@
+/*------------------GENERAL SELECTORS------------------*/
+
+/*font-family: 'Abril Fatface', cursive;
+font-family: 'Raleway', sans-serif;*/
+
+
+/*Para que las anchuras sean mas exactas y no se sumen con padding y margin*/
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding:0;
+}
+
+/*FREQUENTLY USED*/
+
+.autosize{
+    max-width: 1320;
+    width:85%;
+    margin:0 auto;
+}
+
+
+/* HEADER SECTION*/
+
+.header{
+    padding:20px;
+
+}
+
+.header__menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__menu-logo img{
+    width: 100px;
+    height: auto;
+
+}
+
+.header__menu-links a{
+    display:inline-block;
+    padding:10px;
+    text-decoration:none;
+    color: #302528;
+    font-size:24px;
+    font-family: 'Abril Fatface', cursive;
+
+}
+
+.header__menu-links a:hover {
+    color: #FF4881;
+}
+
+
+/*-------------------INTRO SELECTORS -------------------*/
+
+
+
+
+
+/*-------------------TROT SELECTORS -------------------*/
+
+
+
+
+
+
+/*-------------------ABOUT SELECTORS -------------------*/
