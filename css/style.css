@@ -13,7 +13,45 @@ body{
     font-family: 'Raleway', sans-serif;
     margin: 0;
     padding:0;
+    color: #302528;
 }
+
+section{
+    padding: 48px 40px;
+}
+
+
+/*Typography Selectors*/
+
+h1, h2{
+    font-family: 'Abril Fatface', cursive;
+    letter-spacing: 1px;
+    font-weight:normal;
+    margin: 0;
+    padding:0;
+}
+
+h1{
+    Font-size: 72px;
+}
+
+h2{
+    Font-size: 56px;
+}
+
+h3{
+    font-size:32px;
+    font-weight:300;
+}
+p{
+    font-size: 20px;
+    font-weight:300;
+}
+
+
+/*Margins*/
+.mg0
+
 
 /*FREQUENTLY USED*/
 
@@ -23,17 +61,37 @@ body{
     margin:0 auto;
 }
 
+.classic-button{
+    display:inline-block;
+    padding:10px 20px;
+    background: #FF4881;
+    color:#ffffff;
+    text-align:center;
+    border-radius: 25px;
+    width:auto;
+    text-decoration: none;
+}
+
+.classic-button:hover{
+    background: #cc3967;
+}
+
+.classic-button:active{
+    background: #dfdfdf;
+}
+
 
 /* HEADER SECTION*/
 
 .header{
     padding:20px;
-
 }
 
 .header__menu{
     display: flex;
+    /* Para que se distribuyan en orden en el caso del top nav de un lado al otro*/
     justify-content: space-between;
+    /*para que se centren verticalmente*/
     align-items: center;
 }
 
@@ -59,6 +117,27 @@ body{
 
 
 /*-------------------INTRO SELECTORS -------------------*/
+.intro__container{
+    width: 75%;
+    margin:0 auto;
+    text-align: center;
+}
+
+.intro h3 {
+    text-align:center;
+    margin-top:40px;
+    margin-bottom: 60px;
+}
+
+
+.intro__title{
+    text-align:center;
+}
+
+.intro__title span{
+    color: #FF4881;
+}
+
 
 
 
@@ -72,3 +151,11 @@ body{
 
 
 /*-------------------ABOUT SELECTORS -------------------*/
+
+
+
+
+
+
+
+ 
