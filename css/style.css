@@ -11,8 +11,8 @@ font-family: 'Raleway', sans-serif;*/
 
 body{
     font-family: 'Raleway', sans-serif;
-    margin: 0;
-    padding:0;
+    margin: 0 ;
+    padding:0 0px;
     color: #302528;
 }
 
@@ -42,15 +42,21 @@ h2{
 h3{
     font-size:32px;
     font-weight:300;
+    margin: 0;
+    padding:0;
 }
+
+h4{
+    font-size:24px;
+    font-weight: 400;
+}
+
 p{
     font-size: 20px;
     font-weight:300;
+    line-height: 1.6;
+
 }
-
-
-/*Margins*/
-.mg0
 
 
 /*FREQUENTLY USED*/
@@ -72,16 +78,15 @@ p{
     text-decoration: none;
 }
 
-.classic-button:hover{
+/*.classic-button:hover{
+    background: #cc3967;
+}*/
+
+.classic-button:active{
     background: #cc3967;
 }
 
-.classic-button:active{
-    background: #dfdfdf;
-}
-
-
-/* HEADER SECTION*/
+/*-----------------HEADER SELECTORS---------------------*/
 
 .header{
     padding:20px;
@@ -98,7 +103,6 @@ p{
 .header__menu-logo img{
     width: 100px;
     height: auto;
-
 }
 
 .header__menu-links a{
@@ -108,27 +112,48 @@ p{
     color: #302528;
     font-size:24px;
     font-family: 'Abril Fatface', cursive;
-
 }
 
 .header__menu-links a:hover {
     color: #FF4881;
 }
 
+.header__menu-links a:active{
+    color: #cc3967;
+}
+
+/*-----------------FOOTER SELECTORS---------------------*/
+
+.footer{
+    padding:40px;
+    background-color: #F3A3BC;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__menu-links{
+    display:inline-block;
+}
+
 
 /*-------------------INTRO SELECTORS -------------------*/
+
 .intro__container{
     width: 75%;
     margin:0 auto;
-    text-align: center;
+    text-align: center; 
 }
 
 .intro h3 {
     text-align:center;
-    margin-top:40px;
+    margin-top:48px;
     margin-bottom: 60px;
+    
 }
-
 
 .intro__title{
     text-align:center;
@@ -139,23 +164,97 @@ p{
 }
 
 
-
-
-
-
 /*-------------------TROT SELECTORS -------------------*/
 
+.trot{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.trot__container-text{
+    width: 50%;
+    margin:0;
+    text-align: left; 
+    float:left;
+}
 
 
 
+.trot__screens img{
+    width: 640px;
+    height: auto;
+    float: right;
+    margin: 48px 0;
+    text-align: right;
+}
 
+.trot a{
+    margin-top: 48px;
+}
 
 /*-------------------ABOUT SELECTORS -------------------*/
 
+.about{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FEE6ED;
+}
+
+.about__text{
+    width: 50%;
+    margin:0;
+    text-align: left; 
+    float:left;
+}
+
+.about__image img{
+    width: 460px;
+    height: auto;
+    float: right;
+    margin: 48px 0;
+    text-align: right;
+}
+
+.about a{
+    margin-top: 48px;
+}
+
+/*-------------------CONTACT SELECTORS -------------------*/
+
+.contact{
+    background-color: #302528;
+}
 
 
+.contact__container{
+    width: 75%;
+    margin:0 auto;
+    text-align: center; 
+}
 
+.contact h2{
+    text-align:center;
+    margin-top:48px;
+    margin-bottom: 60px;
+    color: #ffffff;
+}
 
-
-
+.contact h3{
+    color: #ffffff;
+    margin-bottom: 62px;
+}
  
+.contact__container a{
+    color: #FF4881;
+    text-decoration:none;
+}
+
+.contact__container a:hover{
+    color:#cc3967;
+}
+
+/* WE NEED TO CHANGE THE TEXT OF THE BUTTTON <a> APPEARS TWICE UNDER THIS SECTION.*/
+
