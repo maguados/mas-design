@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MAS Design</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Raleway:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">   
-    <link rel="stylesheet" href="css/style.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MAS Design</title>
+        <!--Gooogle Fonts-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Raleway:ital,wght@0,300;0,600;1,400&display=swap" rel="stylesheet"> 
+        <!--Font Awesome--> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" /> 
+        <link rel="stylesheet" href="css/style.css">
+    </head>
 
 <body>
    <div class=container>
@@ -36,19 +39,21 @@
 
             <!-- Trot Intro Section--> 
             <section class="trot-intro">
-                <!--Text-->
-                <div class="trot-intro__text">
-                    <h2>Plan. Collaborate. Enjoy!</h2>
-                    <h3>Your go-to trip planning tool</h3>
-                    <p>Everything you and your travel buddies need in orderto plan your next trip. From your first travel idea, to your detailed day-to-day itinerary. Trot will help you every step of your journey.</p>
-                </div>
-
-                <!--Button-->
-                <a class="classic-button">See it in action!</a>   
-
-                <!--Trot Logo-->
-                <div class="trot-intro__image">
-                    <img src="img/trot-logo.jpg" alt="Trot logo">
+                <div class="autosize flex-container">
+                    <!--Text-->
+                    <div class="trot-intro__container-text">
+                        <h2>Plan. Collaborate. Enjoy!</h2>
+                        <h3>Your go-to trip planning tool</h3>
+                        <p>Everything you and your travel buddies need in orderto plan your next trip. From your first travel idea, to your detailed day-to-day itinerary. Trot will help you every step of your journey.</p>
+                        <!--Button-->
+                        <a class="classic-button">See it in action!</a> 
+                    </div>
+                    <!--Trot Logo-->
+                    <div class="trot-logo__container-image">
+                        <div class="trot-intro__image">
+                            <img src="img/trot-logo.jpg" alt="Trot logo">
+                        </div>
+                    </div>
                 </div>
             </section>
             <!-- Ends Trot Intro Section-->
@@ -60,28 +65,55 @@
                 <!--Section Title-->
                 <h2>Overview</h2>
                     <!--Summary-->
-                    <div class="overview__summary">
-                        <!--Image-->
-                        <div class="overview__summary-image">
-                            <img src="img/travel-planning.jpg" alt="Travel Planning">
-                        </div>
-                        <!--Text-->
-                        <div class="overview__summary-text">
-                            <h3>Duration</h3>
-                            <p>Eight Weeks</p>
-                            <h3>Problem</h3>
-                            <p>Travel enthusiasts need a tool that will help them organize their trip and keep their plan handy during their vacations in order to enjoy their time to the fullest.</p>
+                    <div class="overview-summary">
+                        <div class="autosize flex-container">
+                            <!--Image-->
+                            <div class="overview-summary__container-image">
+                                <img src="img/travel-planning.jpg" alt="Travel Planning">
+                            </div>
+                            <!--Text-->
+                            <div class="overview-summary__container-text">
+                                <h3>Duration</h3>
+                                <p>Eight Weeks</p>
+                                <h3>Problem</h3>
+                                <p>Travel enthusiasts need a tool that will help them organize their trip and keep their plan handy during their vacations in order to enjoy their time to the fullest.</p>
+                            </div>
                         </div>
                     </div>
-
-                <!--Design Role, Deliverables and Tools-->
-                <div class="design">
+            <!--*Design* Role, Deliverables and Tools-->
+            <div class="design">
+                <div class="autosize flex-container">
                     <!--Design Role-->
                     <div class="design__role">
                         <!--Design Role Image-->
                         <div class="design__role-image">
                             <img src="img/role.jpg" alt="Role Image">
                         </div>
+                    </div>
+
+                    <!--Design Deliverables-->
+                    <div class="design__deliverables">
+                        <!--Design Deliverables Image-->
+                        <div class="design__deliverables-image">
+                            <img src="img/deliverables.jpg" alt="Deliverables Image">
+                        </div>
+                    </div>
+
+                    <!--Design Tools-->
+                    <div class="design__tools">
+                        <!--Design Tools Image-->
+                        <div class="design__tools-image">
+                            <img src="img/tools.jpg" alt="Tools Image">
+                        </div>
+                    </div>
+                </div>
+            </div> 
+
+            <!--*Design* Role, Deliverables and Tools-->
+            <div class="design">
+                <div class="autosize flex-container">
+                    <!--Design Role-->
+                    <div class="design__role">
                         <!--Design Role Text-->
                         <ul class="design__role-text">
                             <h4>Design Role</h4>
@@ -93,10 +125,6 @@
 
                     <!--Design Deliverables-->
                     <div class="design__deliverables">
-                        <!--Design Deliverables Image-->
-                        <div class="design__deliverables-image">
-                            <img src="img/deliverables.jpg" alt="Deliverables Image">
-                        </div>
                         <!--Design Delievrables Text-->
                         <ul class="design__deliverables-text">
                             <h4>Design Deliverables</h4>
@@ -114,10 +142,6 @@
 
                     <!--Design Tools-->
                     <div class="design__tools">
-                        <!--Design Tools Image-->
-                        <div class="design__tools-image">
-                            <img src="img/tools.jpg" alt="Tools Image">
-                        </div>
                         <!--Design Tools Text-->
                         <ul class="design__tools-text">
                             <h4>Design Tools</h4>
@@ -130,6 +154,66 @@
                         </ul>
                     </div>
                 </div>
+            </div> 
+
+            <!--*Design* Role, Deliverables and Tools-->
+                <div class="design">
+                    <div class="autosize flex-container">
+                        <!--Design Role-->
+                        <div class="design__role">
+                            <!--Design Role Image-->
+                            <div class="design__role-image">
+                                <img src="img/role.jpg" alt="Role Image">
+                            </div>
+                            <!--Design Role Text-->
+                            <ul class="design__role-text">
+                                <h4>Design Role</h4>
+                                <li>UX Design</li>
+                                <li>Visual Design</li>
+                                <li>Branding</li>
+                            </ul>
+                        </div>
+
+                        <!--Design Deliverables-->
+                        <div class="design__deliverables">
+                            <!--Design Deliverables Image-->
+                            <div class="design__deliverables-image">
+                                <img src="img/deliverables.jpg" alt="Deliverables Image">
+                            </div>
+                            <!--Design Delievrables Text-->
+                            <ul class="design__deliverables-text">
+                                <h4>Design Deliverables</h4>
+                                <li>Competitive Analysis</li>
+                                <li>User Survey</li>
+                                <li>User Personas</li>
+                                <li>User Stories & Flows</li>
+                                <li>Wireframes</li>
+                                <li>Wireframe Prototype</li>
+                                <li>Brand Style Guide</li>
+                                <li>Usability Testing</li>
+                                <li>Hi-Fi Prototype</li>
+                            </ul>
+                        </div>
+
+                        <!--Design Tools-->
+                        <div class="design__tools">
+                            <!--Design Tools Image-->
+                            <div class="design__tools-image">
+                                <img src="img/tools.jpg" alt="Tools Image">
+                            </div>
+                            <!--Design Tools Text-->
+                            <ul class="design__tools-text">
+                                <h4>Design Tools</h4>
+                                <li>Figma</li>
+                                <li>Sketch</li>
+                                <li>Invision</li>
+                                <li>Draw.io</li>
+                                <li>UsabilityHub</li>
+                                <li>Zoom</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div> 
             </section>
             <!-- End of Overview Section -->
 
@@ -139,11 +223,13 @@
                 <!--Section Title-->
                 <h2>Discovery Phase</h2>
                     <div class="survey">
-                        <!--Survey General Text-->
-                        <div class="survey__text">
-                            <h3>User Surveys</h3>
-                            <h4>Getting to know the users</h4>
-                            <p>To understand the target audience and pinpoint the problem focus, I created a user survey to understand the habits, motivations, and frustrations of potential users who self identified as travel enthusiasts.</p>
+                        <div class="autosize">
+                            <!--Survey General Text-->
+                            <div class="survey__intro-container">
+                                <h3>User Surveys</h3>
+                                <h4>Getting to know the users</h4>
+                                <p>To understand the target audience and pinpoint the problem focus, I created a user survey to understand the habits, motivations, and frustrations of potential users who self identified as travel enthusiasts.</p>
+                            </div>
                         </div>
                         <!--Survey Findings-->
                         <div class="survey__findings">
@@ -202,29 +288,37 @@
                     </div>
 
                     <div class="analysis">
-                        <!--Image-->
-                        <div class="analysis__logos">
-                            <img src="img/competitors.jpg" alt="Competitors' Logos">
+                        <div class="autosize flex-container">
+                            <!--Image-->
+                            <div class="analysis__container-image">
+                                <img src="img/competitors.jpg" alt="Competitors' Logos">
+                            </div>
+                            <!--Text-->
+                            <div class="analysis__container-text">
+                                <h3>Competitive Analysis</h3>
+                                <h4>Where does Trot sit in the marketplace?</h4>
+                                <p>According to the survey’s results, the participants most frequently used tools like Google Docs and Excel when planning for a trip. Both of these tools have strengths like real-time collaboration capabilities, and they are highly customizable. Yet, these tools are not geared towards trip planning.</p>
+                                <p> Participants also identified Tripadvisor as a competitor which they have used in the past. While this company turns around the traveling industry, its trip planning feature is not a main component of their platform. Surveyed participants who have used this product mistrusted its user-based content.</p>
+                                <a class="classic-button">View Competitive Analysis</a>
+                            </div>
                         </div>
-                        <!--Text-->
-                        <div class="analysis__text">
-                            <h3>Competitive Analysis</h3>
-                            <h4>Where does Trot sit in the marketplace?</h4>
-                            <p>According to the survey’s results, the participants most frequently used tools like Google Docs and Excel when planning for a trip. Both of these tools have strengths like real-time collaboration capabilities, and they are highly customizable. Yet, these tools are not geared towards trip planning.</p>
-                            <p> Participants also identified Tripadvisor as a competitor which they have used in the past. While this company turns around the traveling industry, its trip planning feature is not a main component of their platform. Surveyed participants who have used this product mistrusted its user-based content.</p>
-                        </div>
-                        <!--Button-->
-                        <a class="classic-button">View Competitive Analysis</a>
                     </div>
 
                     <div class="personas">
+                        <div class="autosize">
+                            <!--Personas General Text-->
+                            <div class="personas__intro-container">
+                                <h3>User Personas</h3>
+                                <h4>Bringing users to life</h4>
+                                <p>I created two user personas to help me guide my decisions during the design phase of the project: John and Ofelia. What would Ofelia think about the architecture of the platform? What features would John think are the most and least useful? By giving a background, a name, and a face to my potential users I was able to keep my design decisions user-centered.</p>
+                            </div>
+                        </div>
+
                     <!---TENGO VARIAS PREGUNTAS ACERCA DE COMO HACER LAS IMAGENES-->
                         <div class="personas__ofelia">
                             <!--Ofelia-->
                             <!--AQUI IRIA LA IMAGEN CON LA CITA-->
                             <ul>
-                            <!--INTERCALE LOS H4 ENTRE EL LISTADO Y NO ESTOY SEGURA SI ES BUENA PRACTICA.-->
-                            <!--NO SE COMO PONER LOS BULLET POINTS-->
                                 <h4>Goals:</h4>
                                 <li>Plan her next trip collaboratively with her friends.</li>
                                 <li>Focus on the experience without worrying about the planning behind traveling.</li>
@@ -237,8 +331,6 @@
                             <!--John-->
                             <!--AQUI IRIA LA IMAGEN CON LA CITA-->
                             <ul>
-                                <!--INTERCALE LOS H4 ENTRE EL LISTADO Y NO ESTOY SEGURA SI ES BUENA PRACTICA.-->
-                                <!--NO SE COMO PONER LOS BULLET POINTS-->
                                     <h4>Goals:</h4>
                                     <li>Keep an organized schedule during his trips. </li>
                                     <li>Being on time for his meetings, flights, and reservations.</li>
@@ -261,16 +353,21 @@
 
                     <!--User Stories and User Flows-->
                     <div class="stories-flows">
-                        <!--Text-->
-                        <div class="stories-flows__text">
-                            <h3>User Stories and User Flows</h3>
-                            <h4>Defining user’s goals</h4>
-                            <p>Before beginning to design a MVP, I identified some user stories for new and returning users and I ranked them based on their priority. Then, I turned the highest priority stories into user flows.</p>
+                        <div class="autosize">
+                            <!--Text-->
+                            <div class="stories-flows__intro-container">
+                                <h3>User Stories and User Flows</h3>
+                                <h4>Defining user’s goals</h4>
+                                <p>Before beginning to design a MVP, I identified some user stories for new and returning users and I ranked them based on their priority. Then, I turned the highest priority stories into user flows.</p>
+                            </div>
                             <h4>“As a new user, I want to create a trip profile where I can save the infomration related to my trip.”</h4>
                         </div>
+
                         <!--Image-->
-                        <div class="stories-flows__image">
-                            <img src="img/example-flow.png" alt="Create a new trip flow">
+                        <div class="stories-flow__container-image">
+                            <div class="stories-flows__image">
+                                <img src="img/example-flow.png" alt="Create a new trip flow">
+                            </div>
                         </div>
                         <!--Buttons-->
                         <a class="classic-button">View User Stories</a>
@@ -395,37 +492,26 @@
             <section class="prototype">
                 <!--Section Title-->
                 <h2>High Fidelity Prototype</h2>
-                    <!--Image-->
-                    <div class="prototype__image">
-                        <img src="img/high-fidelity-picture.jpg" alt="Image of Trot High Fidelity Prototype">
+                    <div class="autosize flex-container">
+                        <!--Image-->
+                        <div class="prototype__image">
+                            <img src="img/high-fidelity-picture.jpg" alt="Image of Trot High Fidelity Prototype">
+                        </div>
+                        <!--Text-->
+                        <div class="prototype__text">
+                            <h3>Final Testing and MVP</h3>
+                            <h4>Refining the experience</h4>
+                            <p>Once I had a clear idea of how I wanted my design to look, I proceeded with the project. I took the invaluable feedback from real users from the first usability test and I created mockups of the screens that needed to be reevaluated with changes on their design. I also applied the  I then conducted an A/B test to test my new designs with real users in order to know if the changes I was making were going towards the right direction.</p>
+                            <p>After I settled with a new iteration for some problematic screens and flows, I created a High Fidelity prototype which considered all the feedback obtained from users up to this point. Then, I tested it once more.</p>
+                            <p>Through this new round of testing I was able to identify parts of my design that needed improvement and that I had not identified before. Then, I went back to the design board to make the appropriate changes and finally come up with a final MVP.</p>
+                            <a class="classic-button">View Test Notes</a>
+                        </div>
                     </div>
-                    <!--Text-->
-                    <div class="prototype__text">
-                        <h3>Final Testing and MVP</h3>
-                        <h4>Refining the experience</h4>
-                        <p>Once I had a clear idea of how I wanted my design to look, I proceeded with the project. I took the invaluable feedback from real users from the first usability test and I created mockups of the screens that needed to be reevaluated with changes on their design. I also applied the  I then conducted an A/B test to test my new designs with real users in order to know if the changes I was making were going towards the right direction.</p>
-                        <p>After I settled with a new iteration for some problematic screens and flows, I created a High Fidelity prototype which considered all the feedback obtained from users up to this point. Then, I tested it once more.</p>
-                        <p>Through this new round of testing I was able to identify parts of my design that needed improvement and that I had not identified before. Then, I went back to the design board to make the appropriate changes and finally come up with a final MVP.</p>
-                    </div>
-                    <!--Button-->
-                    <a class="classic-button">View Test Notes</a>
 
                     <!--Trot Screens-->
                     <div class="prototype__screens">
-                        <div class="screen1">
-                            <img src="img/screen1.jpg" alt="Image of Trot screen with first screen">
-                        </div>
-                        <div class="screen2">
-                            <img src="img/screen2.jpg" alt="Image of Trot screen with menu open">
-                        </div>
-                        <div class="screen3">
-                            <img src="img/screen3.jpg" alt="Image of Trot screen with new entries">
-                        </div>
-                        <div class="screen4">
-                            <img src="img/screen4.jpg" alt="Image of Trot entry screen">
-                        </div>
-                        <div class="screen5">
-                            <img src="img/screen5.jpg" alt="Image of Trot entries screen">
+                        <div class="autosize">
+                                <img src="img/trot-final-screens.png" alt="Images of Trot final screens">
                         </div>
                     </div>
 
@@ -441,6 +527,7 @@
             <!--Conclusion-->
             <section class="conclusion">
                 <h2>Conclusion</h2>
+                <div class="autosize flex-container">
                     <!--Text-->
                     <div class="conclusion__text">
                         <h3>Key Learnings</h3>
@@ -450,47 +537,51 @@
                         <p>User testing was the most valuable resource throughout the project. Their oppinion was invaluable in order to decide what features to concentrate on during the first iteration of the MVP.</p>
                         <p>During testing, it was great to see what parts of the design worked well, but it was even better to see what parts had problems. It aws only through the eyes of testers that I was able to see design flaws that I would not have noticed other wise.</p>
                         <h4>There is always room for improvement!</h4>
+                        <a class="classic-button">See it in action!</a>
                     </div>
-                    <!--Button-->
-                    <a class="classic-button">See it in action!</a>
+        
+                    
                     <!--Image-->
                     <div class="conclusion__image">
-                        <img src="img/trot-screens.png" alt="Picture of Trot screens">
+                        <img src="img/trot-screens.jpg" alt="Picture of Trot screens">
                     </div>
-
-                </section>
+                </div>
+            </section>
             <!--Ends Conclusion-->
                 
 
 
-            	<!--Contact Section-->
+
+        <!--Contact Section-->
 			<section class="contact">
-				<div class="contact__container">
-                    <h2>Like what you see?</h2>
-                    <h3>Thank you for stopping by.</h3>
-					<h3>Want to partner up or talk about design? Feel free to contact me, download my <a class="contact__resume-link" href="">resume</a>, or connect with me via <a class="contact__linkedin-link" href="">LinkedIn</a>.</h3>
-					<a class="classic-button">Let's  chat!</a>
+				<div class="autosize">
+					<div class="contact__container">
+                        <h2>Like what you see?</h2>
+                        <h3>Feel free to contact me, download my <a class="contact__container-link" href="">resume</a>, or connect with me via <a class="contact__container-link" href="">LinkedIn</a>.</h3>
+                        <a class="classic-button">Let's  chat!</a>
+					</div>
 				</div>
 			</section>
-			<!--Ends Contact Section-->
-
+		<!--Ends Contact Section-->
 
         </div>        
         <!--Ends Case Study Sections-->   
 
 
-        <!--Footer--> 
-         <footer class="footer">
-            <div class="footer__copyright">
-                <span>® 2021 | Designed and Developed by Miriam Aguado-Staggs</span>
-            </div>
-            <div class="footer__menu-links">
-                <a href="#" class="footer-icon">LinkedIn</a>
-                <a href="#" class="footer-icon">Behance</a>
-                <a href="#" class="footer-icon">Github</a>
-            </div>  
-        </footer>
-        <!--Ends footer-->
+		<!--Footer--> 
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__copyright">
+					<span>® 2021 | Designed and Developed by Miriam Aguado-Staggs</span>
+				</div>
+				<div class="footer__menu-links">
+					<a href="#" class="footer-icon"><i class="fab fa-linkedin"></i></a>
+					<a href="#" class="footer-icon"><i class="fab fa-behance-square"></i></a>
+					<a href="" class="footer-icon"><i class="fab fa-github"></i></a>
+				</div> 
+			</div>
+		</footer>
+	   <!--Ends footer -->
 
 
    </div>
