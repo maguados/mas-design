@@ -90,11 +90,11 @@
 
                         
                             <!--Design Role-->
-                            <div class="design__container">
-                                <div class="design__role-image">
-                                    <img src="img/role.jpg" alt="Role Image">
-                                </div>
-                                <ul class="design__text">
+                            <div class="design__role">
+                            
+                                <img src="img/role.jpg" alt="Role Image">
+                                
+                                <ul>
                                     <h4>Design Role</h4>
                                     <li>UX Design</li>
                                     <li>Visual Design</li>
@@ -102,13 +102,12 @@
                                 </ul>
                             </div>
                    
-                            <!--Design Deliverables-->
-                            <div class="design__container">
-                            
-                                <div class="design__deliverables-image">
-                                    <img src="img/deliverables.jpg" alt="Deliverables Image">
-                                </div>
-                                <ul class="design__text">
+                            <!--Design Deliverables-->    
+                            <div class="design__deliverables">
+
+                                <img src="img/deliverables.jpg" alt="Deliverables Image">
+                                
+                                <ul>
                                     <h4>Design Deliverables</h4>
                                     <li>Competitive Analysis</li>
                                     <li>User Survey</li>
@@ -123,12 +122,11 @@
                             </div>
 
                             <!--Design Tools-->
-                            <div class="design__containers">
+                            <div class="design__tools">
 
-                                <div class="design__tools-image">
-                                    <img src="img/tools.jpg" alt="Tools Image">
-                                </div>
-                                <ul class="design__text">
+                                <img src="img/tools.jpg" alt="Tools Image">
+                                
+                                <ul>
                                     <h4>Design Tools</h4>
                                     <li>Figma</li>
                                     <li>Sketch</li>
@@ -152,69 +150,75 @@
             <section class="discovery">
                 <!--Section Title-->
                 <h2>Discovery Phase</h2>
+
                     <section class="survey">
-                        <div class="autosize">
-                            <!--Survey General Text-->
+                        <section class="autosize">
+                            <!--Survey Intro-->
                             <div class="survey__intro-container">
                                 <h3>User Surveys</h3>
                                 <h4>Getting to know the users</h4>
                                 <p>To understand the target audience and pinpoint the problem focus, I created a user survey to understand the habits, motivations, and frustrations of potential users who self identified as travel enthusiasts.</p>
                             </div>
-                        </div>
+                        </section>
+
                         <!--Survey Findings-->
-                        <div class="survey__findings">
+                        <section class="survey__findings">
                             <!--Chart's Title-->
-                            <h3>User Research Findings</h3>
+                            <h4 class="survey__findings-title">User Research Findings</h4>
 
-                            <!--First Column: Organization-->
-                            <div class="survey__findings-organization">
-                                <!--Pie Chart-->
-                                <div class="survey__findings-organization-image">
-                                    <img src="img/organization-pie-chart.jpg" alt="Organization Pie Chart">
-                                </div>
-                                <!--Text-->
-                                <ul class="survey__findings-organization-text">
-                                    <p>How do you keep your trip information organized?</p>
-                                    <!--NO SE COMO PONER LOS PUNTOS DE ENUMERACION DE COLORES. CADA COLOR DE INCISO REPRESENTA UNA SECCION DE LA GRAFICA-->
-                                    <li>Keep the information scattered through apps, emails, notes, etc.</li>
-                                    <li>Keep the essential information in their inbox.</li>
-                                    <li>Keep their information on cloud based organizer tools.</li>
-                                    <li>Print the information related to their trip.</li>
-                                </ul>
-                            </div>
+                            <div class="autosize flex-container">
 
-                            <!--Second Column: Habits-->
-                            <div class="survey__findings-habits">
-                                <!--Pie Chart-->
-                                <div class="survey__findings-habits-image">
-                                    <img src="img/habits-pie-chart.jpg" alt="Habits Pie Chart">
-                                </div>
+                                <!--First Column-->
+                                <div class="survey__findings-column">
+                                <!--Image-->
+                                    <div class="survey__findings-organization-image">
+                                        <img src="img/organization-pie-chart.jpg" alt="Organization Pie Chart">
+                                    </div>
                                 <!--Text-->
-                                <div class="survey__findings-habits-text">
-                                    <p>90% of the people surveyed had never used a travel app before and the rest of the people had only used review-based apps which they didn’t use on a regular basis because they did not trust the review content on them. </p>
-                                </div>   
-                            </div>
+                                    <ul class="survey__findings-organization-text">
+                                        <p>How do you keep your trip information organized?</p>
+                                        <!--NO SE COMO PONER LOS PUNTOS DE ENUMERACION DE COLORES. CADA COLOR DE INCISO REPRESENTA UNA SECCION DE LA GRAFICA-->
+                                        <li>Keep the information scattered through apps, emails, notes, etc.</li>
+                                        <li>Keep the essential information in their inbox.</li>
+                                        <li>Keep their information on cloud based organizer tools.</li>
+                                        <li>Print the information related to their trip.</li>
+                                    </ul>
+                                </div>
 
-                            <!--Preferred Features-->
-                            <div class="survey__findings-features">
-                                <!--Column Graphs-->
-                                <div class="survey__findings-features-image">
-                                    <img src="img/graph.jpg" alt="Preferred Features Graph">
-                                </div>
+                                <!--Second Column-->
+                                <div class="survey__findings-column">
+                                <!--Image-->
+                                    <div class="survey__findings-habits-image">
+                                        <img src="img/habits-pie-chart.jpg" alt="Habits Pie Chart">
+                                    </div>
                                 <!--Text-->
-                                <ul class="survey__findings-features-text">
-                                    <p>Preferred features for a trip planner app:</p>
-                                    <!--NO SE COMO PONER LOS PUNTOS DE ENUMERACION DE COLORES. CADA COLOR DE INCISO REPRESENTA UNA SECCION DE LA GRAFICA-->
-                                    <li>Ability to save information in the same place.</li>
-                                    <li>Having a customizable map to save points of interest.</li>
-                                    <li>Receiving reminders to my phone.</li>
-                                    <li>Ability to work collaboratively. </li>
-                                </ul>
+                                    <div class="survey__findings-habits-text">
+                                        <p>90% of the people surveyed had never used a travel app before and the rest of the people had only used review-based apps which they didn’t use on a regular basis because they did not trust the review content on them. </p>
+                                    </div>   
+                                </div>
+
+                                <!--Third Column-->
+                                <div class="survey__findings-column">
+                                <!--Image-->
+                                    <div class="survey__findings-features-image">
+                                        <img src="img/graph.jpg" alt="Preferred Features Graph">
+                                    </div>
+                                <!--Text-->
+                                    <ul class="survey__findings-features-text">
+                                        <p>Preferred features for a trip planner app:</p>
+                                        <!--NO SE COMO PONER LOS PUNTOS DE ENUMERACION DE COLORES. CADA COLOR DE INCISO REPRESENTA UNA SECCION DE LA GRAFICA-->
+                                        <li>Ability to save information in the same place.</li>
+                                        <li>Having a customizable map to save points of interest.</li>
+                                        <li>Receiving reminders to my phone.</li>
+                                        <li>Ability to work collaboratively. </li>
+                                    </ul>
+                                </div>
+
                             </div>
                             <!--Button-->
                             <a class="classic-button">View Survey</a>
 
-                        </div>
+                        </section>
                     </section>
 
                     <section class="analysis">
@@ -244,10 +248,12 @@
                             </div>
                         </div>
 
-                        <!---TENGO VARIAS PREGUNTAS ACERCA DE COMO HACER LAS IMAGENES-->
+                        <!---PERSONA 1-->
                         <div class="personas__ofelia">
-                            <!--Ofelia-->
-                            <!--AQUI IRIA LA IMAGEN CON LA CITA-->
+                            <div class="pic-quote">
+                                <img src="img/ofelia-pic.jpg" alt="Persona Picture">
+                                <q>Planning a trip is part of the joy of traveling</q>
+                            </div>
                             <ul>
                                 <h4>Goals:</h4>
                                 <li>Plan her next trip collaboratively with her friends.</li>
@@ -257,9 +263,13 @@
                                 <li>The tools she currently uses are not tailored for trip planning.</li>
                             </ul>
                         </div>
+
+                        <!---PERSONA 2-->
                         <div class="personas__john">
-                            <!--John-->
-                            <!--AQUI IRIA LA IMAGEN CON LA CITA-->
+                            <div class="pic-quote">
+                                <img src="img/john-pic.jpg" alt="Persona Picture">
+                                <q>Planning a trip is part of the joy of traveling</q>
+                            </div>
                             <ul>
                                     <h4>Goals:</h4>
                                     <li>Keep an organized schedule during his trips. </li>
@@ -269,6 +279,7 @@
                                     <li>He dislikes going through emails, apps, and websites to retrieve his trip plans, especially when there is no internet access.</li>
                                 </ul>
                         </div>
+                        
                         <!--Button-->
                         <a class="classic-button">View User Personas</a>
                     </section>
@@ -280,6 +291,7 @@
             <section class="information-architecture">
                 <!--Section Title-->
                 <h2>Information Architecture</h2>
+
 
                     <!--User Stories and User Flows-->
                     <section class="stories-flows">
@@ -305,6 +317,7 @@
                             </div>
                     </section>
 
+
                     <!--Wireframes-->
                     <section class="wireframes">
                         <div class="autosize">
@@ -316,17 +329,9 @@
                             </div>
                         </div>
                     </section>
-
-
-
-
-
-
-
+                            <!--Wireframes Images-->
                     <section class="wireframes__images">
                         <div class="autosize flex-container">
-
-
                             <!--Paper Wireframe-->
                             <div class="wireframes__images--paper-container">
                                 <!--Image-->
@@ -338,8 +343,6 @@
                                     <a class="classic-button">View Paper Wireframes</a>
                                 </div>
                             </div>
-
-
                             <!--Lo-Fi Wireframe-->
                             <div class="wireframes__images--lofi-container">
                                 <!--Image-->
@@ -351,17 +354,8 @@
                                     <a class="classic-button">View Lo-Fi Wireframes</a>
                                 </div>
                             </div>
-
-
-
-
                         </div>
                     </section>
-                    
-
-
-
-
 
 
                     <!--Usability Test-->
@@ -388,7 +382,6 @@
                             </div>
                         </div>
                     </section>
-
             </section>
             <!--Ends Information Architecture Section-->
 
