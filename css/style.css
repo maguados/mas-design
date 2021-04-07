@@ -164,10 +164,6 @@ p{
 }
 
 /*-------------------BUSY BUS SELECTORS -------------------*/
-.busy-bus__container-text{
-    flex-basis: 50%;
-    margin:0;
-}
 .busy-bus__container-image{
     flex-basis: 45%;
     margin: 0;
@@ -176,6 +172,10 @@ p{
     width:100%;
     height: auto;
     margin: 0;
+}
+.busy-bus__container-text{
+    flex-basis: 50%;
+    margin:0;
 }
 .busy-bus a{
     margin-top: 48px;
@@ -293,6 +293,7 @@ p{
 }
 /*----------------------Overview Selectors-------------------------*/
 .overview h2{
+    margin-top: 24px;
     margin-left: 5%;
 }
 /*<<<<<Summary Selectors>>>>>*/
@@ -310,6 +311,16 @@ p{
     margin: 0;
 }
 /*<<<<<Design Role, Deliverables and Tools Selectors>>>>>*/
+.design ul{
+    list-style-type: none;
+    text-align: center;
+    line-height: 1.6;
+}
+.design__containers{
+    flex-basis: 45%;
+    margin: 0;
+    text-align: center;
+}
 
 
 
@@ -317,6 +328,7 @@ p{
 
 /*----------------------Discovery Phase Selectors-------------------------*/
 .discovery h2{
+    margin-top: 24px;
     margin-left: 5%;
 }
 /*<<<<<User Surveys Selectors>>>>>*/
@@ -348,7 +360,6 @@ p{
 .analysis a{
     margin-top: 48px;
 }
-
 /*<<<<<User Personas Selectors>>>>>*/
 .personas__intro-container{
     width: 75%;
@@ -360,6 +371,7 @@ p{
 
 /*----------------------Information Architecture Selectors-------------------------*/
 .information-architecture h2{
+    margin-top: 24px;
     margin-left: 5%;
 }
 /*<<<<<User Stories and User Flows Selectors>>>>>*/
@@ -368,16 +380,127 @@ p{
     margin:0 auto;
     text-align: left;
 }
+.stories-flows__title{
+    width: 65%;
+    margin:0 auto;
+    text-align: center;
+}
 .stories-flow__container-image img{
     width:75%;
     height: auto;
     margin: 0 auto;
     display: block;
 }
-
+.stories-flows__buttons a{
+    margin: 0 160px;
+}
+/*<<<<<Wireframes Selectors>>>>>*/
+.wireframes__intro-container{
+    width: 75%;
+    margin:0 auto;
+    text-align: left;
+}
+.wireframes__images--paper-container{
+    flex-basis: 45%;
+    margin: 0;
+    text-align: center;
+}
+.wireframes__images--lofi-container{
+    flex-basis: 45%;
+    margin: 0;
+    text-align: center;
+}
+.wireframes__images-image img{
+    width:100%;
+    height: auto;
+    margin: 0;
+}
+.wireframes__images-button a{
+    margin-top: 16px;
+}
+/*<<<<<Usability Test Selectors>>>>>*/
+.usability-test__text{
+    flex-basis: 50%;
+    margin:0;
+}
+.usability-test a{
+    margin-top: 48px;
+}
+.usability-test ol{
+    font-size: 20px;
+    line-height: 1.6;
+}
+.usability-test__video iframe{
+    display: block;
+    height: 400px;
+    margin: 0 auto;
+}
+/*----------------------Branding Selectors-------------------------*/
+.branding h2{
+    margin-top: 24px;
+    margin-left: 5%;
+}
+/*<<<<<Branding Intro Selectors>>>>>*/
+.branding-intro__container-text{
+    flex-basis: 50%;
+    margin:0;
+}
+.branding-intro__container-image{
+    flex-basis: 45%;
+    margin: 0;
+}
+.branding-intro__container-image img{
+    width:100%;
+    height: auto;
+    margin: 0;
+}
+/*<<<<<Branding Images Selectors>>>>>*/
+.branding-process__images{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.branding-process__images img{
+    height: 232px;
+    width: auto;
+    margin:0 24px;
+}
+/*<<<<<Branding Colors Selectors>>>>>*/
+.branding__colors--container-text{
+    flex-basis: 50%;
+    margin:0;
+}
+.branding__colors--container-image{
+    flex-basis: 35%;
+    margin: 0;
+}
+.branding__colors--container-image img{
+    width:100%;
+    height: auto;
+    margin: 0;
+}
+/*<<<<<Branding Typography Selectors>>>>>*/
+.branding__typography--container-text{
+    flex-basis: 50%;
+    margin:0;
+}
+.branding__typography--container-image{
+    flex-basis: 35%;
+    margin: 0;
+}
+.branding__typography--container-image img{
+    width:100%;
+    height: auto;
+    margin: 0;
+}
+/*.center-button__flex-container{
+    display: block; 
+    justify-content: center;
+}*/
 
 /*-----------------------High Fidelity Prototype Selectors-------------------------*/
 .prototype h2{
+    margin-top: 24px;
     margin-left: 5%;
 }
 /*<<<<<Text Selectors>>>>>*/
@@ -397,11 +520,24 @@ p{
 .prototype a{
     margin-top: 48px;
 }
-/*<<<<<Screens Selectors>>>>>*/
-
-
+/*<<<<<Trot Screens Selectors>>>>>*/
+.prototype__screens{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.prototype__screens img{
+    margin:0 6px;
+}
+/*<<<<<Prototype Video Selectors>>>>>*/
+.prototype__video iframe{
+    display: block;
+    height: 312px;
+    margin: 0 auto;
+}
 /*----------------------Conclusion Selectors-------------------------*/
 .conclusion h2{
+    margin-top: 24px;
     margin-left: 5%;
 }
 /*<<<<<Conclusion Selectors>>>>>*/
@@ -422,8 +558,6 @@ p{
 .conclusion a{
     margin-top: 48px;
 }
-
-
 /*/////////////////////////////////CONTACT FORM SELECTORS//////////////////////////////////*/
 /*----------------------Form Intro Selectors-------------------------*/
 .form__intro-container{
@@ -473,7 +607,6 @@ textarea{
     font-family:"Raleway", sans-serif;
     resize:none;
 }
-
 /*////////////////////////////////FOOTER SELECTORS//////////////////////////////////*/
 .footer{
     background-color: #F3A3BC;
@@ -482,7 +615,6 @@ textarea{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    /*These threee lines help to keep the content of the container centered and with a max of 1320px*/
     max-width:1320px;
     padding: 24px 5%;
     margin: 0 auto;
