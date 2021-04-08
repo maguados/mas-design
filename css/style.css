@@ -431,12 +431,12 @@ p{
     margin:0 auto;
     text-align: left;
 }
-.wireframes__images--paper-container{
+.wireframes__images-paper-container{
     flex-basis: 45%;
     margin: 0;
     text-align: center;
 }
-.wireframes__images--lofi-container{
+.wireframes__images-lofi-container{
     flex-basis: 45%;
     margin: 0;
     text-align: center;
@@ -471,15 +471,15 @@ p{
     margin-top: 24px;
 }
 /*<<<<<Branding Intro Selectors>>>>>*/
-.branding-intro__container-text{
+.branding__intro-container-text{
     flex-basis: 50%;
     margin:0;
 }
-.branding-intro__container-image{
+.branding__intro-container-image{
     flex-basis: 45%;
     margin: 0;
 }
-.branding-intro__container-image img{
+.branding__intro-container-image img{
     width:100%;
     height: auto;
     margin: 0;
@@ -523,11 +523,6 @@ p{
     height: auto;
     margin: 0;
 }
-/*.center-button__flex-container{
-    display: block; 
-    justify-content: center;
-}*/
-
 /*-----------------------High Fidelity Prototype Selectors-------------------------*/
 .prototype h2{
     margin-top: 24px;
