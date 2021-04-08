@@ -64,10 +64,17 @@ p{
 .classic-button:active{
     background: #cc3967;
 }
+.center-button{
+    text-align: center;
+}
 .flex-container{
     display: flex; 
     justify-content: space-between;
     align-items: center;
+    margin:20px 0;
+}
+.flex-container--align-top{
+    align-items: flex-start;
 }
 /*/////////////////////////////////HEADER SELECTORS//////////////////////////////////*/
 .header{
@@ -262,45 +269,44 @@ p{
 }
 /*----------------------Overview Selectors-------------------------*/
 .overview h2{
-    margin-top: 24px;
-    margin-left: 5%;
+    margin: 32epx 0;
+
 }
 /*<<<<<Summary Selectors>>>>>*/
-.overview-summary__container-text{
+.overview__summary-container-text{
     flex-basis: 50%;
     margin:0;
 }
-.overview-summary__container-image{
+.overview__summary-container-image{
     flex-basis: 30%;
     margin: 0;
 }
-.overview-summary__container-image img{
+.overview__summary-container-image img{
     width:100%;
     height: auto;
     margin: 0;
 }
 /*<<<<<Design Role, Deliverables and Tools Selectors>>>>>*/
-.design ul{
-    list-style-type: none;
-    text-align: center;
-    line-height: 1.6;
+.overview__design{
+    margin: 0 120px;
+    margin-top: 120px
 }
-.design__role{
-    flex-basis: 30%;
-    text-align: center;
+.overview__design div{
+    text-align:center;
 }
-.design__deliverables{
-    flex-basis: 30%;
-    text-align: center;
+.overview__design h4{
+    text-align:center;
+    margin: 40px 0 20px;
 }
-.design__tools{
-    flex-basis: 30%;
-    text-align: center;
+.overview__design ul{
+    list-style: none;
+    padding:0;
+    margin:0;
+    line-height: 2;
 }
 /*----------------------Discovery Phase Selectors-------------------------*/
 .discovery h2{
     margin-top: 24px;
-    margin-left: 5%;
 }
 /*<<<<<User Surveys Selectors>>>>>*/
 .survey__intro-container{
@@ -309,15 +315,21 @@ p{
     text-align: left;
 }
 .survey__findings-title{
-    margin:0 auto;
     text-align: center;
+    margin-bottom: 56px;
 }
-.survey__findings-column{
-    display: block;
+.survey__findings div{
     flex-basis: 30%;
     text-align: center;
-
 }
+.survey__findings ul, p{
+    margin-top: 24px;
+    text-align:left;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+
 
 
 
@@ -346,12 +358,51 @@ p{
     margin:0 auto;
     text-align: left;
 }
-
-
+.personas__card{
+    flex-basis:45%;
+}
+.personas__card img{
+    /*display: block;*/
+    margin:0 auto;
+}
+.personas__card-quote{
+    display:block;
+    padding:15px 30px;
+    background: #FEE6ED;
+    font-size: 16px;
+    line-height:1.5;
+}
+.personas__card-quote q{
+    font-style: italic;
+}
+/*.personas__photo-user{
+    width: 100%;
+    height: 360px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}*/
+.pic-quote{
+    position:relative;
+    text-align: right;
+}
+.pic-quote--left{
+    text-align: left;
+}
+.personas__card-quote{
+    text-align:left;
+    position: absolute;
+    width:60%;
+    top: 30%;
+    left: 0;
+}
+.personas__card-quote--left{
+    right:0;
+    left: initial;
+}
 /*----------------------Information Architecture Selectors-------------------------*/
 .information-architecture h2{
     margin-top: 24px;
-    margin-left: 5%;
 }
 /*<<<<<User Stories and User Flows Selectors>>>>>*/
 .stories-flows__intro-container{
@@ -371,7 +422,8 @@ p{
     display: block;
 }
 .stories-flows__buttons a{
-    margin: 0 160px;
+    margin: 0 180px;
+    margin-top: 48px;
 }
 /*<<<<<Wireframes Selectors>>>>>*/
 .wireframes__intro-container{
@@ -417,7 +469,6 @@ p{
 /*----------------------Branding Selectors-------------------------*/
 .branding h2{
     margin-top: 24px;
-    margin-left: 5%;
 }
 /*<<<<<Branding Intro Selectors>>>>>*/
 .branding-intro__container-text{
@@ -480,7 +531,6 @@ p{
 /*-----------------------High Fidelity Prototype Selectors-------------------------*/
 .prototype h2{
     margin-top: 24px;
-    margin-left: 5%;
 }
 /*<<<<<Text Selectors>>>>>*/
 .prototype__text{
@@ -504,9 +554,7 @@ p{
     display: flex;
     justify-content: space-between;
     text-align: center;
-}
-.prototype__screens img{
-    margin:0 6px;
+    margin: 56px 0px;
 }
 /*<<<<<Prototype Video Selectors>>>>>*/
 .prototype__video iframe{
@@ -517,7 +565,6 @@ p{
 /*----------------------Conclusion Selectors-------------------------*/
 .conclusion h2{
     margin-top: 24px;
-    margin-left: 5%;
 }
 /*<<<<<Conclusion Selectors>>>>>*/
 
