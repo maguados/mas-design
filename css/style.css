@@ -269,8 +269,7 @@ p{
 }
 /*----------------------Overview Selectors-------------------------*/
 .overview h2{
-    margin: 32epx 0;
-
+    margin: 32px 0;
 }
 /*<<<<<Summary Selectors>>>>>*/
 .overview__summary-container-text{
@@ -327,14 +326,13 @@ p{
     text-align:left;
     line-height: 1.6;
     font-size: 16px;
+    list-style: none;  
 }
-
-
-
-
-
-
-
+.survey__findings ul, li{
+    margin-left: 0; 
+    padding-left: 0;
+    margin: 1em 0;
+}
 /*<<<<<Competitive Analysis Selectors>>>>>*/
 .analysis__container-text{
     flex-basis: 50%;
@@ -363,7 +361,7 @@ p{
 }
 .personas__card img{
     /*display: block;*/
-    margin:0 auto;
+    margin:48px  auto;
 }
 .personas__card-quote{
     display:block;
@@ -375,6 +373,21 @@ p{
 .personas__card-quote q{
     font-style: italic;
 }
+.personas__card-quote h4{
+    font-size: 16px;
+}
+.personas__card ul{
+    line-height: 1.6;
+    list-style: none;
+}
+.personas__card ul li::before {
+    content: "\2022";  
+    color: #F3A3BC; 
+    font-weight: bold; 
+    display: inline-block; 
+    width: 1em; 
+    margin-left: -1em; 
+  }
 /*.personas__photo-user{
     width: 100%;
     height: 360px;
