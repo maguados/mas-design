@@ -47,7 +47,7 @@ p{
 /*FREQUENTLY USED*/
 .autosize{
     max-width: 1320px;
-    padding: 48px 5%;
+    padding: 24px 5%;
     width: 100%;
     margin: 0 auto;
 }
@@ -78,16 +78,17 @@ p{
 }
 /*/////////////////////////////////HEADER SELECTORS//////////////////////////////////*/
 .header{
-    padding:20px 5%;
-    max-width: 1320px;
-    widows: 100%;
+    padding:0 5%;
     margin: 0 auto;
+    background-color: #fff;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 .header__menu{
     display: flex;
-    /* Para que se distribuyan en orden en el caso del top nav de un lado al otro*/
     justify-content: space-between;
-    /*para que se centren verticalmente*/
     align-items: center;
 }
 .header__menu-logo img{
@@ -110,6 +111,9 @@ p{
 }
 /*/////////////////////////////////HOME SELECTORS//////////////////////////////////*/
 /*-------------------INTRO SELECTORS -------------------*/
+.intro{
+    margin-top: 240px;
+}
 .intro__container{
     width: 75%;
     margin:0 auto;
@@ -213,6 +217,7 @@ p{
 /*--------------------Intro Selectors---------------------*/
 .about__intro{
     background-color: #FEE6ED;
+    margin-top: 168px;
 }
 .about__intro-container{
     width: 75%;
@@ -321,14 +326,15 @@ p{
     flex-basis: 30%;
     text-align: center;
 }
-.survey__findings ul, p{
+.survey__findings ul, .survey__findings p{
     margin-top: 24px;
     text-align:left;
     line-height: 1.6;
     font-size: 16px;
     list-style: none;  
 }
-.survey__findings ul, li{
+
+.survey__findings ul, .survey__findings ul li{
     margin-left: 0; 
     padding-left: 0;
     margin: 1em 0;
@@ -498,15 +504,15 @@ p{
     margin: 0;
 }
 /*<<<<<Branding Images Selectors>>>>>*/
-.branding-process__images{
+.branding__process-images{
     display: flex;
     justify-content: space-between;
-    text-align: center;
+    align-items: center;
 }
-.branding-process__images img{
-    height: 232px;
-    width: auto;
-    margin:0 24px;
+.branding__process-images img{
+    width: 23%;
+    height:auto;
+    margin:0;
 }
 /*<<<<<Branding Colors Selectors>>>>>*/
 .branding__colors--container-text{
@@ -561,8 +567,13 @@ p{
 .prototype__screens{
     display: flex;
     justify-content: space-between;
-    text-align: center;
+    align-items: center;
     margin: 56px 0px;
+}
+.prototype__screens img{
+    width: 18%;
+    height:auto;
+    margin:0;
 }
 /*<<<<<Prototype Video Selectors>>>>>*/
 .prototype__video iframe{
@@ -594,6 +605,9 @@ p{
 }
 /*/////////////////////////////////CONTACT FORM SELECTORS//////////////////////////////////*/
 /*----------------------Form Intro Selectors-------------------------*/
+.form__intro{
+    margin-top: 168px;
+}
 .form__intro-container{
     width: 75%;
     margin:0 auto;
@@ -667,6 +681,183 @@ textarea{
 .footer__menu-links a:active i {
     color: #cc3967;
 }
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+PHONE SELECTORS
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*///////////////////////////HEADER SELECTORS/////////////////////////////*/
+@media screen and (max-width:600px){
+    .header{
+        padding:20px 5%;
+    }
+    .header__menu{
+        display: block;
+    }
+    .header__menu-links a{
+        display: block;
+        text-align: right;
+        border-bottom: 1px solid #eee;
+    }
+   .header__menu-logo img{
+       width:100px;
+       height: auto;
+   }
+/*////////////////////////////////HOME PAGE SELECTORS//////////////////////////////////*/
+    /*-------------------INTRO SELECTORS -------------------*/
+    .intro{
+        margin-top: 240px;
+    }
+    .intro__container{
+        width: 95%;
+        margin:0 auto;
+        text-align: center; 
+    }
+    /*-------------------TROT SELECTORS -------------------*/
+    .trot{
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%; 
+    }
+    .index-trot-flex{
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center; 
+    }
+
+    /*-------------------BUSY BUS SELECTORS -------------------*/
+    .busy-bus{
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+    }
+    .index-bus-flex{
+        display: flex;
+        flex-direction: column; 
+    }
+    .busy-bus__container-text{
+        text-align: center;
+        width: 100%;
+        margin:0;
+    }
+    .busy-bus__container-image{
+        text-align: center;
+        width: 100%;
+        margin:0;
+    } 
+    /*-------------------ABOUT SELECTORS -------------------*/
+    .index-about-flex{
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .about__text{
+        width: 100%;
+        margin:0;
+    }
+    .about__image{
+       width:100%;
+        margin:0;
+    }
+    .about__image img{
+        width:95%;
+    }
+   /*///////////////////////////ABOUT PAGE SELECTORS/////////////////////////////*/
+    /*-------------------BIO SELECTTORS--------------------*/
+    .bio-flex-container{
+        display: flex; 
+        flex-direction: column;
+        justify-content: center;   
+    }
+    /*-------------------ABOUT INTRO-------------------------*/
+    .about__intro{
+        background-color: #FEE6ED;
+    }
+    .about__intro-container{
+        width: 95%;
+        margin:0 auto;
+        text-align: center; 
+    }
+    .about__intro-container p{
+        margin-bottom: 0px;
+    }
+/*/////////////////////////////CONTACT PAGE SELECTORS////////////////////////////*/
+/*/////////////////////////////TROT CASE STUDY PAGE SELECTORS////////////////////////////*/
+    /*----------------------Trot Intro Selectors-------------------------*/
+.trot-intro{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%; 
+}
+.study-trot-flex{
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center; 
+}
+/*----------------------Overview Selectors-------------------------*/
+.overview h2{}
 
 
+    
 
+   
+
+
+/*/////////////////////////////FOOTER SELECTORS////////////////////////////*/
+    /*.footer{
+        position:fixed;
+        bottom:0; 
+        left:0;
+        z-index:10;
+        width:100%;
+    }*//*top 0 para menu*/
+    .footer__container{
+        display:flex;
+        flex-direction: column-reverse;
+        padding: 12px 5%;
+    }
+    .footer__copyright{
+        text-align:center;
+        font-size: 12px;
+        /*display: none;*//*TO HIDE SECTION IN CASE I WANTED TO*/
+    }
+
+
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////////
+TABLET SELECTORS
+//////////////////////////////////////////////////////////////////////////////////////////*/
+@media screen and (min-width:601px) and (max-width:1024px) {
+/*Bio Selectors*/
+.bio-flex-container{
+    display: block;  
+}
+.about__bio-text{
+    width:100%;
+    margin:0;
+}
+/*.about__bio-text > p{margin-top:0;}
+.about__bio-container-image{
+    float:left;
+    width: 50%;;
+    margin: 0;
+}*/
+.about__bio-container-image img{
+    width:100%;
+    height: auto;
+    margin: 30px auto;
+}
+/*<<<<<Branding Images Selectors>>>>>*/
+.branding__process-images{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.branding__process-images img{
+    width: 48%;
+    height: auto;
+    margin: 0;
+}
+
+}
