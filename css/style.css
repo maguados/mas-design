@@ -385,6 +385,7 @@ p{
 .personas__card ul{
     line-height: 1.6;
     list-style: none;
+    font-size: 20px;
 }
 .personas__card ul li::before {
     content: "\2022";  
@@ -546,7 +547,7 @@ p{
 .prototype h2{
     margin-top: 24px;
 }
-/*<<<<<Text Selectors>>>>>*/
+/*<<<<<Prototype Intro Selectors>>>>>*/
 .prototype__text{
     flex-basis: 50%;
     margin:0;
@@ -685,8 +686,25 @@ textarea{
 PHONE SELECTORS
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
-/*///////////////////////////HEADER SELECTORS/////////////////////////////*/
+
 @media screen and (max-width:600px){
+    h1{
+        Font-size: 48px;
+    }
+    h2{
+        Font-size: 32px;
+    }
+    h3{
+        font-size:24px;
+
+    }
+    h4{
+        font-size:16px;
+    }
+    p{
+        font-size: 16px;
+    }
+    /*///////////////////////////HEADER SELECTORS/////////////////////////////*/
     .header{
         padding:20px 5%;
     }
@@ -702,7 +720,7 @@ PHONE SELECTORS
        width:100px;
        height: auto;
    }
-/*////////////////////////////////HOME PAGE SELECTORS//////////////////////////////////*/
+    /*////////////////////////////////HOME PAGE SELECTORS//////////////////////////////////*/
     /*-------------------INTRO SELECTORS -------------------*/
     .intro{
         margin-top: 240px;
@@ -723,7 +741,6 @@ PHONE SELECTORS
         flex-direction: column-reverse;
         text-align: center; 
     }
-
     /*-------------------BUSY BUS SELECTORS -------------------*/
     .busy-bus{
         display: flex;
@@ -761,7 +778,7 @@ PHONE SELECTORS
     .about__image img{
         width:95%;
     }
-   /*///////////////////////////ABOUT PAGE SELECTORS/////////////////////////////*/
+    /*///////////////////////////ABOUT PAGE SELECTORS/////////////////////////////*/
     /*-------------------BIO SELECTTORS--------------------*/
     .bio-flex-container{
         display: flex; 
@@ -780,29 +797,227 @@ PHONE SELECTORS
     .about__intro-container p{
         margin-bottom: 0px;
     }
-/*/////////////////////////////CONTACT PAGE SELECTORS////////////////////////////*/
-/*/////////////////////////////TROT CASE STUDY PAGE SELECTORS////////////////////////////*/
-    /*----------------------Trot Intro Selectors-------------------------*/
-.trot-intro{
-    display: flex;
-    flex-direction: column;
-    flex-basis: 100%; 
-}
-.study-trot-flex{
-    display: flex;
-    flex-direction: column-reverse;
-    text-align: center; 
-}
-/*----------------------Overview Selectors-------------------------*/
-.overview h2{}
-
-
-    
-
-   
-
-
-/*/////////////////////////////FOOTER SELECTORS////////////////////////////*/
+    /*/////////////////////////////TROT CASE STUDY PAGE SELECTORS////////////////////////////*/
+        /*----------------------Trot Intro Selectors-------------------------*/
+    .trot-intro{
+        display: flex;
+        flex-direction: column;
+    }
+    .trot-intro__flex{
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center; 
+    }
+        /*----------------------Overview Selectors-------------------------*/
+    .overview__section-title{
+        margin:24px 0;
+        text-align: center;
+    }
+    /*<<<<<Summary Selectors>>>>>*/
+    .overview__summary-flex{
+        display: flex;
+        flex-direction: column;
+        text-align: center; 
+    }
+    .overview__summary-container-text{
+        text-align: left;
+    }
+    /*<<<<<Design Role, Deliverables and Tools Selectors>>>>>*/
+    .overview__design-flex{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .overview__design-deliverables img{
+        margin-top: 120px;
+    }
+    .overview__design-tools img{
+        margin-top: 120px;  
+    }   
+    /*----------------------Discovery Phase Selectors-------------------------*/
+    .discovery__section-title{
+        text-align: center;
+    }
+    /*<<<<<User Surveys Selectors>>>>>*/
+    .survey__intro-container{
+        text-align: left;
+        width: 100%;
+    }
+    .survey__findings-flex{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .survey__findings-habits img{
+        margin-top: 120px;
+    }
+    .survey__findings-features img{
+        margin-top: 120px;
+    }
+    /*<<<<<Competitive Analysis Selectors>>>>>*/
+    .analysis-flex{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .analysis__container-image img{
+        margin: 32px 0;
+    }
+    .analysis__container-text-button{
+        text-align: center;
+    }
+    /*<<<<<User Personas Selectors>>>>>*/
+    .personas__intro-container{
+        width:100%;
+    }
+    .persona__card-flex{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .personas__card-quote{
+        text-align:left;
+        position: absolute;
+        width:60%;
+        top: 70%;
+        left: 0;
+    }
+    /*----------------------Information Architecture Selectors-------------------------*/
+    .information-architecture__section-title{
+        text-align: center;
+    }
+    /*<<<<<User Stories and User Flows Selectors>>>>>*/
+    .stories-flows__intro-container{
+        width: 100%;
+    }
+    .stories-flows__title{
+        display: none;
+    }
+    .stories-flow__container-image{
+        display: none;
+    }
+    /*<<<<<Wireframes Selectors>>>>>*/
+    .wireframes__intro-container{
+        width:100%;
+    }
+    .wireframes__images-flex{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .wireframes__images-paper-container{
+        width:100%;
+    }
+    .wireframes__images-lofi-container{
+        width:100%;
+    } 
+    .wireframes__images-button{
+        margin-bottom: 32px;
+    }
+    /*<<<<<Usability Test Selectors>>>>>*/
+    .usability-test__flex{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .usabilty-test__button{
+        text-align: center;
+        margin-bottom: 62px;
+    }
+    /*----------------------Branding Selectors-------------------------*/
+    .branding__section-title{
+        text-align: center;
+    }
+    .branding__intro-flex{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .branding__intro-container-image img{
+        margin: 32px 0;
+    }
+    /*<<<<<Branding Images Selectors>>>>>*/
+    .branding__process-images{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .branding__process-images img{
+        width: 48%;
+        height: auto;
+        margin: 0;
+    }
+    /*<<<<<Branding Colors Selectors>>>>>*/
+    .branding__colors-flex{
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center; 
+    }
+    .branding__colors--container-text{
+        flex-basis: 100%;
+        text-align: left;
+    }
+    .branding__colors--container-image img{
+        margin-top: 32px;
+    }
+    /*<<<<<Branding Typography Selectors>>>>>*/
+    .branding__typography-flex{
+        display: flex;
+        flex-direction: column;
+        text-align: center; 
+    }
+    .branding__typography--container-text{
+        flex-basis: 100%;
+        text-align: left;
+    }
+    /*-----------------------High Fidelity Prototype Selectors-------------------------*/
+    .prototype__section-title{
+        text-align: center;
+    }
+    /*<<<<<Prototype Intro Selectors>>>>>*/
+    .prototype__intro-flex{
+        display: flex;
+        flex-direction: column;
+    }
+    .prototype__text{
+        flex-basis: 100%;
+        text-align: left;
+    } 
+    .prototype__text-button{
+        text-align: center;
+    }
+    /*<<<<<Trot Screens Selectors>>>>>*/
+    .prototype__screens{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .prototype__screens img{
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+    /*----------------------Conclusion Selectors-------------------------*/
+    .conclusion__section-title{
+        text-align: center;
+    }
+    .conclusion-flex{
+        display: flex;
+        flex-direction: column;
+        text-align: left;  
+    }
+    .conclusion__image{
+        text-align: center;
+    }
+    .conclusion__text-button{
+        text-align: center;
+    }
+    .conclusion__image img{
+        width: 100%;
+    }
+    /*/////////////////////////////FOOTER SELECTORS////////////////////////////*/
     /*.footer{
         position:fixed;
         bottom:0; 
@@ -820,44 +1035,45 @@ PHONE SELECTORS
         font-size: 12px;
         /*display: none;*//*TO HIDE SECTION IN CASE I WANTED TO*/
     }
-
-
 }
-
 /*/////////////////////////////////////////////////////////////////////////////////////////
 TABLET SELECTORS
 //////////////////////////////////////////////////////////////////////////////////////////*/
 @media screen and (min-width:601px) and (max-width:1024px) {
-/*Bio Selectors*/
-.bio-flex-container{
-    display: block;  
-}
-.about__bio-text{
-    width:100%;
-    margin:0;
-}
-/*.about__bio-text > p{margin-top:0;}
-.about__bio-container-image{
-    float:left;
-    width: 50%;;
-    margin: 0;
-}*/
-.about__bio-container-image img{
-    width:100%;
-    height: auto;
-    margin: 30px auto;
-}
-/*<<<<<Branding Images Selectors>>>>>*/
-.branding__process-images{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-}
-.branding__process-images img{
-    width: 48%;
-    height: auto;
-    margin: 0;
-}
-
+    .about__image img{
+        width:100%;
+    }
+    /*///////////////////////////ABOUT PAGE SELECTORS/////////////////////////////*/
+    /*Bio Selectors*/
+    .bio-flex-container{
+        display: block;  
+    }
+    .about__bio-text{
+        width:100%;
+        margin:0;
+    }
+    .about__bio-text > p{margin-top:0;}
+    .about__bio-container-image{
+        float:left;
+        width: 50%;;
+        margin: 0;
+        margin-right: 40px;
+    }
+    .about__bio-container-image img{
+        width:100%;
+        height: auto;
+        margin: 30px auto;
+    }
+    /*<<<<<Branding Images Selectors>>>>>*/
+    /*.branding__process-images{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .branding__process-images img{
+        width: 48%;
+        height: auto;
+        margin: 0;
+    }*/
 }
