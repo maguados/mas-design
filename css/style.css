@@ -85,6 +85,7 @@ p{
     position: fixed;
     top: 0;
     width: 100%;
+    z-index:1000;
 }
 .header__menu{
     display: flex;
@@ -94,6 +95,9 @@ p{
 .header__menu-logo img{
     width: 100px;
     height: auto;
+}
+.header__menu-links{
+    overflow: hidden;
 }
 .header__menu-links a{
     display:inline-block;
@@ -109,6 +113,13 @@ p{
 .header__menu-links a:active{
     color: #cc3967;
 }
+.header__menu-links a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+.header__icon{
+      display:none;
+  }
 /*/////////////////////////////////HOME SELECTORS//////////////////////////////////*/
 /*-------------------INTRO SELECTORS -------------------*/
 .intro{
@@ -256,6 +267,10 @@ p{
 }
 /*/////////////////////////////////CASE STUDY SELECTORS//////////////////////////////////*/
 /*----------------------Trot Intro Selectors-------------------------*/
+.trot-intro{
+    margin-top: 160px;
+}
+
 .trot-intro__container-text{
     flex-basis: 55%;
     margin:0;
@@ -289,6 +304,7 @@ p{
     width:100%;
     height: auto;
     margin: 0;
+    margin-bottom: 10%;
 }
 /*<<<<<Design Role, Deliverables and Tools Selectors>>>>>*/
 .overview__design{
@@ -309,8 +325,11 @@ p{
     line-height: 2;
 }
 /*----------------------Discovery Phase Selectors-------------------------*/
-.discovery h2{
+/*.discovery h2{
     margin-top: 24px;
+}*/
+.discovery__section-title{
+    margin-bottom: 32px;
 }
 /*<<<<<User Surveys Selectors>>>>>*/
 .survey__intro-container{
@@ -320,7 +339,7 @@ p{
 }
 .survey__findings-title{
     text-align: center;
-    margin-bottom: 56px;
+    margin: 56px 0;
 }
 .survey__findings div{
     flex-basis: 30%;
@@ -333,11 +352,13 @@ p{
     font-size: 16px;
     list-style: none;  
 }
-
 .survey__findings ul, .survey__findings ul li{
     margin-left: 0; 
     padding-left: 0;
     margin: 1em 0;
+}
+.survey__findings a{
+    margin-bottom: 10%;
 }
 /*<<<<<Competitive Analysis Selectors>>>>>*/
 .analysis__container-text{
@@ -354,7 +375,7 @@ p{
     margin: 0;
 }
 .analysis a{
-    margin-top: 48px;
+    margin: 10% 0;
 }
 /*<<<<<User Personas Selectors>>>>>*/
 .personas__intro-container{
@@ -421,8 +442,8 @@ p{
     left: initial;
 }
 /*----------------------Information Architecture Selectors-------------------------*/
-.information-architecture h2{
-    margin-top: 24px;
+.information-architecture__section-title{
+    margin-bottom: 32px;   
 }
 /*<<<<<User Stories and User Flows Selectors>>>>>*/
 .stories-flows__intro-container{
@@ -442,8 +463,7 @@ p{
     display: block;
 }
 .stories-flows__buttons a{
-    margin: 0 180px;
-    margin-top: 48px;
+    margin: 10% 0;
 }
 /*<<<<<Wireframes Selectors>>>>>*/
 .wireframes__intro-container{
@@ -467,7 +487,7 @@ p{
     margin: 0;
 }
 .wireframes__images-button a{
-    margin-top: 16px;
+    margin: 10% 0;
 }
 /*<<<<<Usability Test Selectors>>>>>*/
 .usability-test__text{
@@ -481,13 +501,21 @@ p{
     font-size: 20px;
     line-height: 1.6;
 }
+.usability-test__video{
+    position: relative;
+    width: 65%;
+    padding-bottom: 56.25%;
+}
 .usability-test__video iframe{
-    display: block;
-    height: 400px;
-    margin: 0 auto;
+position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
 /*----------------------Branding Selectors-------------------------*/
-.branding h2{
+.branding__section-title{
     margin-top: 24px;
 }
 /*<<<<<Branding Intro Selectors>>>>>*/
@@ -514,11 +542,13 @@ p{
     width: 23%;
     height:auto;
     margin:0;
+    margin-top: 5%;
 }
 /*<<<<<Branding Colors Selectors>>>>>*/
 .branding__colors--container-text{
     flex-basis: 50%;
     margin:0;
+    margin-top: 10%;
 }
 .branding__colors--container-image{
     flex-basis: 35%;
@@ -533,6 +563,7 @@ p{
 .branding__typography--container-text{
     flex-basis: 50%;
     margin:0;
+    margin-top: 10%;
 }
 .branding__typography--container-image{
     flex-basis: 35%;
@@ -542,9 +573,10 @@ p{
     width:100%;
     height: auto;
     margin: 0;
+    margin-bottom: 10%;
 }
 /*-----------------------High Fidelity Prototype Selectors-------------------------*/
-.prototype h2{
+.prototype__section-title{
     margin-top: 24px;
 }
 /*<<<<<Prototype Intro Selectors>>>>>*/
@@ -557,12 +589,12 @@ p{
     margin:0;
 }
 .prototype__image img{
-    width: 460px;
+    width: 100%;
     height: auto;
     margin: 0;
 }
-.prototype a{
-    margin-top: 48px;
+.prototype__text-button{
+    margin: 10% 0;
 }
 /*<<<<<Trot Screens Selectors>>>>>*/
 .prototype__screens{
@@ -577,13 +609,21 @@ p{
     margin:0;
 }
 /*<<<<<Prototype Video Selectors>>>>>*/
+.prototype__video{
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+}
 .prototype__video iframe{
-    display: block;
-    height: 312px;
-    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
 }
 /*----------------------Conclusion Selectors-------------------------*/
-.conclusion h2{
+.conclusion__section-title{
     margin-top: 24px;
 }
 /*<<<<<Conclusion Selectors>>>>>*/
@@ -601,8 +641,8 @@ p{
     height: auto;
     margin: 0;
 }
-.conclusion a{
-    margin-top: 48px;
+.conclusion__text-button{
+    margin: 10% 0;
 }
 /*/////////////////////////////////CONTACT FORM SELECTORS//////////////////////////////////*/
 /*----------------------Form Intro Selectors-------------------------*/
@@ -685,8 +725,6 @@ textarea{
 /*//////////////////////////////////////////////////////////////////////////////////////////////////////////////
 PHONE SELECTORS
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
-
-
 @media screen and (max-width:600px){
     h1{
         Font-size: 48px;
@@ -706,24 +744,57 @@ PHONE SELECTORS
     }
     /*///////////////////////////HEADER SELECTORS/////////////////////////////*/
     .header{
-        padding:20px 5%;
+        padding: 0px 5%;
+        position: relative;
     }
     .header__menu{
         display: block;
     }
     .header__menu-links a{
         display: block;
-        text-align: right;
-        border-bottom: 1px solid #eee;
+        margin: 60px 0;
+        text-align: center;
+        border-bottom: none;
+        color: #fff;
     }
    .header__menu-logo img{
        width:100px;
        height: auto;
    }
+   /*Menu Selectors*/
+   .header__menu-links{
+       display:none;
+   }
+   .header__menu-links--responsive{
+       display: block;
+       position: fixed;
+       background:rgba(0,0,0,.85);
+       padding: 60px;
+       right:0;
+       top:0;
+       z-index: 999;
+       height:100%;
+       width:100%;
+   }
+   .header__icon{
+       z-index: 1000;
+       font-size: 30px;
+       text-align: center;
+       color:#302528;
+       display: block;
+       padding: 10px;
+       width:54px;
+       height:54px;
+       border-radius:50%;
+       background-color: #ffffff;
+       position:fixed;
+       top:20px;
+       right: 20px;
+   }
     /*////////////////////////////////HOME PAGE SELECTORS//////////////////////////////////*/
     /*-------------------INTRO SELECTORS -------------------*/
     .intro{
-        margin-top: 240px;
+        margin-top: 0;
     }
     .intro__container{
         width: 95%;
@@ -788,6 +859,7 @@ PHONE SELECTORS
     /*-------------------ABOUT INTRO-------------------------*/
     .about__intro{
         background-color: #FEE6ED;
+        margin-top: 0;
     }
     .about__intro-container{
         width: 95%;
@@ -797,11 +869,16 @@ PHONE SELECTORS
     .about__intro-container p{
         margin-bottom: 0px;
     }
+    /*///////////////////////////CONTACT PAGE SELECTORS/////////////////////////////*/
+    .form__intro{
+        margin-top: 0;
+    }
     /*/////////////////////////////TROT CASE STUDY PAGE SELECTORS////////////////////////////*/
         /*----------------------Trot Intro Selectors-------------------------*/
     .trot-intro{
         display: flex;
         flex-direction: column;
+        margin-top: 0;
     }
     .trot-intro__flex{
         display: flex;
@@ -810,7 +887,7 @@ PHONE SELECTORS
     }
         /*----------------------Overview Selectors-------------------------*/
     .overview__section-title{
-        margin:24px 0;
+        margin: 8px 0;
         text-align: center;
     }
     /*<<<<<Summary Selectors>>>>>*/
@@ -836,12 +913,17 @@ PHONE SELECTORS
     }   
     /*----------------------Discovery Phase Selectors-------------------------*/
     .discovery__section-title{
+        margin-bottom: 24px;
         text-align: center;
     }
     /*<<<<<User Surveys Selectors>>>>>*/
     .survey__intro-container{
         text-align: left;
         width: 100%;
+    }
+    .survey__findings{
+        width: 100%;
+        height:auto;
     }
     .survey__findings-flex{
         display: flex;
@@ -870,20 +952,34 @@ PHONE SELECTORS
     .personas__intro-container{
         width:100%;
     }
+    .personas__card ul{
+        font-size: 16px;
+    }
     .persona__card-flex{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        display: block;
     }
     .personas__card-quote{
         text-align:left;
-        position: absolute;
-        width:60%;
-        top: 70%;
-        left: 0;
+        position: relative;
+        width:100%;
+        top: initial;
+        left: initial;
+        margin-bottom: 24px;
+    }
+    .personas__card{
+        width:100%
+    }
+    .personas__card img{
+        display:block;
+        width:100%;
+        margin-bottom: 0;
+    }
+    .personas a{
+        margin: 10% 0;
     }
     /*----------------------Information Architecture Selectors-------------------------*/
     .information-architecture__section-title{
+        margin-bottom: 24px;
         text-align: center;
     }
     /*<<<<<User Stories and User Flows Selectors>>>>>*/
@@ -896,6 +992,7 @@ PHONE SELECTORS
     .stories-flow__container-image{
         display: none;
     }
+
     /*<<<<<Wireframes Selectors>>>>>*/
     .wireframes__intro-container{
         width:100%;
@@ -920,9 +1017,15 @@ PHONE SELECTORS
         flex-direction: column;
         align-items: center;
     }
+    .usability-test ol{
+        font-size: 16px;
+    }
     .usabilty-test__button{
         text-align: center;
         margin-bottom: 62px;
+    }
+    .usability-test__video{
+        width: 100%;
     }
     /*----------------------Branding Selectors-------------------------*/
     .branding__section-title{
@@ -998,6 +1101,7 @@ PHONE SELECTORS
         width: 100%;
         height: auto;
         margin: 0;
+        margin-left: 3%;
     }
     /*----------------------Conclusion Selectors-------------------------*/
     .conclusion__section-title{
@@ -1015,6 +1119,10 @@ PHONE SELECTORS
         text-align: center;
     }
     .conclusion__image img{
+        width: 100%;
+    }
+    /*-------------------CONTACT SELECTORS -------------------*/
+    .contact__container{
         width: 100%;
     }
     /*/////////////////////////////FOOTER SELECTORS////////////////////////////*/

@@ -16,25 +16,28 @@
    <div class="page-content">
 
 
-        <!--Header-->
-        <header class="header">
-            <div class="autosize">
-                <nav class="header__menu">
-                    <a href="index.html">
-                        <div class="header__menu-logo">
-                            <img src="img/logo.jpg" alt="logotipo">
-                        </div>
-                    </a>
-                    <div class="header__menu-links">
-                        <a href="index.html#trot-work">Work</a>
-                        <a href="about.html">About</a>
-                        <a href="https://drive.google.com/file/d/1n6-xVbYuOZLILRAU0Wu9OVQXdJn6i4dX/view?usp=sharing" target="_blank">Resume</a>
-                        <a href="contact.html">Contact</a>
-                    </div>
-                </nav>
-            </div>
-        </header>
-        <!--Ends Header-->
+		<!--Header-->
+		<header class="header">
+			<div class="autosize">
+				<nav class="header__menu">
+					<a href="index.html">
+						<div class="header__menu-logo">
+							<img src="img/logo.jpg" alt="logotipo">
+						</div>
+					</a>
+					<a href="javascript:void(0);" class="header__icon" onclick="myFunction()">
+						<i class="fa fa-bars"></i>
+					</a>
+					<div class="header__menu-links" id="myTopnav">
+						<a href="index.html#trot-work">Work</a>
+						<a href="about.html">About</a>
+						<a href="https://drive.google.com/file/d/1n6-xVbYuOZLILRAU0Wu9OVQXdJn6i4dX/view?usp=sharing" target="_blank">Resume</a>
+						<a href="contact.html">Contact</a>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<!--Ends Header-->
 
 
         <!--Case Study Sections-->
@@ -544,7 +547,7 @@
 				<div class="autosize">
 					<div class="contact__container">
                         <h2>Like what you see?</h2>
-                        <h3>Feel free to contact me, download my <a class="contact__container-link" href="">resume</a>, or connect with me via <a class="contact__container-link" href="">LinkedIn</a>.</h3>
+                        <h3>Feel free to contact me, download my <a class="contact__container-link" href="https://drive.google.com/file/d/1n6-xVbYuOZLILRAU0Wu9OVQXdJn6i4dX/view?usp=sharing" target="_blank">resume</a>, or connect with me via <a class="contact__container-link" href="https://www.linkedin.com/in/mas-design/" target="_blank">LinkedIn</a>.</h3>
                         <a href="contact.html" class="classic-button">Let's  chat!</a>
 					</div>
 				</div>
@@ -570,8 +573,18 @@
 		</footer>
 	   <!--Ends footer -->
 
+       <script>
+        function myFunction() {
+             var x = document.getElementById("myTopnav");
+             if (x.className === "header__menu-links") {
+             x.className += " header__menu-links--responsive";
+             } else {
+             x.className = "header__menu-links";
+             }
+             }
+        </script>
 
-   </div>
+    </div>
 </body>
 
 </html>

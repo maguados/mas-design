@@ -26,7 +26,10 @@
 							<img src="img/logo.jpg" alt="logotipo">
 						</div>
 					</a>
-					<div class="header__menu-links">
+					<a href="javascript:void(0);" class="header__icon" onclick="myFunction()">
+						<i class="fa fa-bars"></i>
+					</a>
+					<div class="header__menu-links" id="myTopnav">
 						<a href="#trot-work">Work</a>
 						<a href="about.html">About</a>
 						<a href="https://drive.google.com/file/d/1n6-xVbYuOZLILRAU0Wu9OVQXdJn6i4dX/view?usp=sharing" target="_blank">Resume</a>
@@ -122,7 +125,7 @@
 				<div class="autosize">
 					<div class="contact__container">
 						<h2>Let's create something beautiful together!</h2>
-						<h3>Feel free to contact me, download my <a class="contact__container-link" href="">resume</a>, or connect with me via <a class="contact__container-link" href="">LinkedIn</a>.</h3>
+						<h3>Feel free to contact me, download my <a class="contact__container-link" href="https://drive.google.com/file/d/1n6-xVbYuOZLILRAU0Wu9OVQXdJn6i4dX/view?usp=sharing" target="_blank">resume</a>, or connect with me via <a class="contact__container-link" href="https://www.linkedin.com/in/mas-design/" target="_blank">LinkedIn</a>.</h3>
 						<a href="contact.html" class="classic-button">Let's  chat!</a>
 					</div>
 				</div>
@@ -149,6 +152,16 @@
 		</footer>
 	   <!--Ends footer -->
 
+	   <script>
+		   function myFunction() {
+				var x = document.getElementById("myTopnav");
+				if (x.className === "header__menu-links") {
+				x.className += " header__menu-links--responsive";
+				} else {
+				x.className = "header__menu-links";
+				}
+				}
+	   </script>
 
    	</div>
 </body>
