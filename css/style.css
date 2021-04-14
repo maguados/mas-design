@@ -1,5 +1,4 @@
-/*------------------GENERAL SELECTORS------------------*/
-/*Para que las anchuras sean mas exactas y no se sumen con padding y margin*/
+/*/////////////////////////////////GENERAL SELECTORS//////////////////////////////////*/
 *{
     box-sizing: border-box;
 }
@@ -302,7 +301,7 @@ p{
 }
 /*----------------------Overview Selectors-------------------------*/
 .overview__section-title{
-    margin: 32px 0;
+    margin: 5% 0;
 }
 /*<<<<<Summary Selectors>>>>>*/
 .overview__summary-container-image{
@@ -339,7 +338,7 @@ p{
 }
 /*----------------------Discovery Phase Selectors-------------------------*/
 .discovery__section-title{
-    margin-bottom: 32px;
+    margin: 5% 0;
 }
 /*<<<<<User Surveys Selectors>>>>>*/
 .survey__intro-container{
@@ -397,7 +396,6 @@ p{
     flex-basis:45%;
 }
 .personas__card img{
-    /*display: block;*/
     margin:48px  auto;
 }
 .personas__card-quote{
@@ -426,13 +424,6 @@ p{
     width: 1em; 
     margin-left: -1em; 
   }
-/*.personas__photo-user{
-    width: 100%;
-    height: 360px;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}*/
 .pic-quote{
     position:relative;
     text-align: right;
@@ -453,7 +444,7 @@ p{
 }
 /*----------------------Information Architecture Selectors-------------------------*/
 .information-architecture__section-title{
-    margin-bottom: 32px;   
+    margin: 5% 0;   
 }
 /*<<<<<User Stories and User Flows Selectors>>>>>*/
 .stories-flows__intro-container{
@@ -513,20 +504,20 @@ p{
 }
 .usability-test__video{
     position: relative;
-    width: 65%;
+    width: 45%;
     padding-bottom: 56.25%;
 }
 .usability-test__video iframe{
-position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
 }
 /*----------------------Branding Selectors-------------------------*/
 .branding__section-title{
-    margin-top: 24px;
+    margin: 5% 0;
 }
 /*<<<<<Branding Intro Selectors>>>>>*/
 .branding__intro-container-text{
@@ -587,7 +578,7 @@ position: absolute;
 }
 /*-----------------------High Fidelity Prototype Selectors-------------------------*/
 .prototype__section-title{
-    margin-top: 24px;
+    margin: 5% 0;
 }
 /*<<<<<Prototype Intro Selectors>>>>>*/
 .prototype__text{
@@ -634,7 +625,7 @@ position: absolute;
 }
 /*----------------------Conclusion Selectors-------------------------*/
 .conclusion__section-title{
-    margin-top: 24px;
+    margin: 5% 0;
 }
 /*<<<<<Conclusion Selectors>>>>>*/
 
@@ -706,8 +697,8 @@ textarea{
     font-family:"Raleway", sans-serif;
     resize:none;
 }
-   /*/////////////////////////////BUSY BUS SELECTORS////////////////////////////*/
-   /*----------------------Busy Bus Intro Selectors-------------------------*/
+/*/////////////////////////////BUSY BUS SELECTORS////////////////////////////*/
+/*----------------------Busy Bus Intro Selectors-------------------------*/
 .bus-intro{
     margin-top: 160px;
 }
@@ -746,6 +737,7 @@ textarea{
 }
 .bus-survey__findings a{
     margin-bottom: 10%;
+    margin-top: 5%;
 }
 /*----------------------Information Architecture Selectors-------------------------*/
 /*<<<<<User Stories and User Flows Selectors>>>>>*/
@@ -785,27 +777,97 @@ table tr:last-child td:last-child {
 }
 /*<<<<<Paper Prototypes Selectors>>>>>*/
 .paper-prototypes__intro-container{
-    width: 95%;
+    width: 75%;
     margin:0 auto;
     text-align: left;
     margin-top: 10%;
 }
 .paper-prototypes__image-container img{
-    width:75%;
+    width:95%;
     height: auto;
     margin: 0 auto;
     display: block;
 }
-
-
-
-
-
-
-
-
-
-
+/*<<<<<Usability Test Selectors>>>>>>*/
+.usability-test__image{
+    flex-basis: 40%;
+    margin:0;
+}
+.usability-test__image img{
+    width: 100%;
+    height: auto;
+    margin:0;
+}
+/*<<<<<Lo-Fi Prototype Selectors>>>>>>*/
+.lofi-prototype__image{
+    flex-basis: 45%;
+    margin:0;
+}
+.lofi-prototype__image img{
+    width: 100%;
+    height: auto;
+    margin:0;
+}
+.lofi-prototype__text{
+    flex-basis: 50%;
+    margin:0;
+}
+.lofi-prototype ol{
+    font-size: 20px;
+    line-height: 1.6;
+}
+/*<<<<<HI-Fi Prototype Selectors>>>>>>*/
+.hifi-prototypes__section-title{
+    margin: 5% 0;   
+}
+.hifi-prototypes__first-iteration-text{
+    flex-basis: 50%;
+    margin:0;
+}
+.hifi-prototypes__first-iteration-image{
+    flex-basis: 45%;
+    margin:0;
+}
+.hifi-prototypes__first-iteration-image img{
+    width: 100%;
+    height: auto;
+    margin:0;
+}
+.hifi-prototypes ol{
+    font-size: 20px;
+    line-height: 1.6;
+}
+/*<<<<<Final MVP Selectors>>>>>>*/
+.hifi-prototypes__second-iteration{
+    margin-top: 10%;
+}
+.hifi-prototypes__second-iteration-image{
+    flex-basis: 45%;
+    margin:0;
+}
+.hifi-prototypes__second-iteration-image img{
+    width: 100%;
+    height: auto;
+    margin:0;
+}
+.hifi-prototypes__first-iteration-text{
+    flex-basis: 50%;
+    margin:0;
+}
+/*<<<<<Conclusion Selectors>>>>>>*/
+.conclusion__video{
+    position: relative;
+    width: 45%;
+    padding-bottom: 56.25%;
+}
+.conclusion__video iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
 /*////////////////////////////////FOOTER SELECTORS//////////////////////////////////*/
 .footer{
     background-color: #F3A3BC;
@@ -984,7 +1046,7 @@ PHONE SELECTORS
         margin-top: 0;
     }
     /*/////////////////////////////TROT CASE STUDY PAGE SELECTORS////////////////////////////*/
-        /*----------------------Trot Intro Selectors-------------------------*/
+    /*----------------------Trot Intro Selectors-------------------------*/
     .trot-intro{
         display: flex;
         flex-direction: column;
@@ -995,9 +1057,19 @@ PHONE SELECTORS
         flex-direction: column-reverse;
         text-align: center; 
     }
-        /*----------------------Overview Selectors-------------------------*/
+    /*----------------------Busy Bus Intro Selectors-------------------------*/
+    .bus-intro{
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+    }
+    .bus-intro__flex{
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;  
+    }    
+    /*----------------------Overview Selectors-------------------------*/
     .overview__section-title{
-        margin: 8px 0;
         text-align: center;
     }
     /*<<<<<Summary Selectors>>>>>*/
@@ -1023,7 +1095,6 @@ PHONE SELECTORS
     }   
     /*----------------------Discovery Phase Selectors-------------------------*/
     .discovery__section-title{
-        margin-bottom: 24px;
         text-align: center;
     }
     /*<<<<<User Surveys Selectors>>>>>*/
@@ -1089,7 +1160,6 @@ PHONE SELECTORS
     }
     /*----------------------Information Architecture Selectors-------------------------*/
     .information-architecture__section-title{
-        margin-bottom: 24px;
         text-align: center;
     }
     /*<<<<<User Stories and User Flows Selectors>>>>>*/
@@ -1102,7 +1172,6 @@ PHONE SELECTORS
     .stories-flow__container-image{
         display: none;
     }
-
     /*<<<<<Wireframes Selectors>>>>>*/
     .wireframes__intro-container{
         width:100%;
@@ -1235,14 +1304,87 @@ PHONE SELECTORS
     .contact__container{
         width: 100%;
     }
+    /*/////////////////////////////BUSY BUS SELECTORS////////////////////////////*/
+    /*----------------------Busy Bus Intro Selectors-------------------------*/
+    .bus-intro{
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+    }
+    .bus-intro__flex{
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;  
+    }   
+    /*<<<<<User Surveys Selectors>>>>>*/
+    .bus-survey__findings{
+        width: 100%;
+        height:auto;
+    }
+    .bus-survey__findings-flex{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .survey__findings-bus-features img{
+        margin-top: 16%;
+    }
+    .survey__findings-bus-competitors img{
+        margin-top: 16%;
+    }
+    /*<<<<<Busy Bus User Stories and User Flows Selectors>>>>>*/
+    table{
+        display: none;
+    }
+    .stories-flows a{
+        margin-top: 10%;
+    }
+    /*<<<<<Busy Bus Paper Prototypes Selectors>>>>>*/
+    .paper-prototypes__intro-container{
+        width: 100%;
+        margin-top: 10%;
+    }
+    .paper-prototypes a{
+        margin: 10% 0;
+    }
+    /*<<<<<Lo-Fi Prototypes Selectors>>>>>*/
+    .lofi-prototype-flex{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .lofi-prototype__text{
+        flex-basis: 100%;
+        text-align: left;
+    }
+    .lofi-prototype ol{
+        font-size: 16px;
+    }
+    /*<<<<<Hi-Fi Prototypes Selectors>>>>>*/
+    .hifi-prototypes__section-title{
+        text-align: center;
+    }
+    /*First Iteration*/
+    .hifi-prototypes__first-iteration-flex{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .hifi-prototypes__first-iteration-text{
+        flex-basis: 100%;
+        text-align: left;
+    }
+    .hifi-prototypes ol{
+        font-size: 16px;
+    }
+    /*Second Iteration*/
+    .hifi-prototypes__second-iteration-flex{
+        display: flex;
+        flex-direction: column;
+    }
+    .hifi-prototypes__first-iteration-text{
+        flex-basis: 100%;
+        text-align: left;
+    }
     /*/////////////////////////////FOOTER SELECTORS////////////////////////////*/
-    /*.footer{
-        position:fixed;
-        bottom:0; 
-        left:0;
-        z-index:10;
-        width:100%;
-    }*//*top 0 para menu*/
     .footer__container{
         display:flex;
         flex-direction: column-reverse;
@@ -1282,16 +1424,4 @@ TABLET SELECTORS
         height: auto;
         margin: 30px auto;
     }
-    /*<<<<<Branding Images Selectors>>>>>*/
-    /*.branding__process-images{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .branding__process-images img{
-        width: 48%;
-        height: auto;
-        margin: 0;
-    }*/
 }
