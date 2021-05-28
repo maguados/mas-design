@@ -187,6 +187,23 @@ p{
 .busy-bus a{
     margin-top: 48px;
 }
+/*-------------------BUSY BUS SELECTORS -------------------*/
+.viva__container-image{
+    flex-basis: 45%;
+    margin: 0;
+}
+.viva__container-image img{
+    width:100%;
+    height: auto;
+    margin: 0;
+}
+.viva__container-text{
+    flex-basis: 50%;
+    margin:0;
+}
+.viva a{
+    margin-top: 48px;
+}
 /*-------------------ABOUT SELECTORS -------------------*/
 .about{
     background-color: #FEE6ED;
@@ -277,7 +294,7 @@ p{
     display: flex; 
     justify-content: space-between;   
 }
-/*/////////////////////////////////CASE STUDY SELECTORS//////////////////////////////////*/
+/*/////////////////////////////////TROT CASE STUDY SELECTORS//////////////////////////////////*/
 /*----------------------Trot Intro Selectors-------------------------*/
 .trot-intro{
     margin-top: 160px;
@@ -305,7 +322,7 @@ p{
 }
 /*<<<<<Summary Selectors>>>>>*/
 .overview__summary-container-image{
-    flex-basis: 30%;
+    flex-basis: 40%;
     margin: 0;
 }
 .overview__summary-container-image img{
@@ -377,6 +394,7 @@ p{
 .analysis__container-image{
     flex-basis: 35%;
     margin: 0;
+    margin-bottom: 8%;
 }
 .analysis__container-image img{
     width:100%;
@@ -470,6 +488,7 @@ p{
 .wireframes__intro-container{
     width: 75%;
     margin:0 auto;
+    margin-bottom: 5%;
     text-align: left;
 }
 .wireframes__images-paper-container{
@@ -548,12 +567,14 @@ p{
 /*<<<<<Branding Colors Selectors>>>>>*/
 .branding__colors--container-text{
     flex-basis: 50%;
-    margin:0;
+    margin: 0;
     margin-top: 10%;
 }
 .branding__colors--container-image{
     flex-basis: 35%;
     margin: 0;
+    margin-top: 10%;
+    margin-bottom: 5%;
 }
 .branding__colors--container-image img{
     width:100%;
@@ -739,7 +760,7 @@ textarea{
     margin-bottom: 10%;
     margin-top: 5%;
 }
-/*----------------------Information Architecture Selectors-------------------------*/
+/*----------------------Busy Bus Information Architecture Selectors-------------------------*/
 /*<<<<<User Stories and User Flows Selectors>>>>>*/
 table {
     width: 100%;
@@ -789,9 +810,13 @@ table tr:last-child td:last-child {
     display: block;
 }
 /*<<<<<Usability Test Selectors>>>>>>*/
+.usability-test__text{
+    margin-top: 5%;
+}
 .usability-test__image{
     flex-basis: 40%;
     margin:0;
+    margin-top: 5%;
 }
 .usability-test__image img{
     width: 100%;
@@ -811,6 +836,7 @@ table tr:last-child td:last-child {
 .lofi-prototype__text{
     flex-basis: 50%;
     margin:0;
+    margin-top: 5%;
 }
 .lofi-prototype ol{
     font-size: 20px;
@@ -867,6 +893,77 @@ table tr:last-child td:last-child {
     width: 100%;
     height: 100%;
     border: 0;
+}
+/*/////////////////////////////////VIVA CASE STUDY SELECTORS//////////////////////////////////*/
+/*----------------------Viva Intro Selectors-------------------------*/
+.viva-intro{
+    margin-top: 160px;
+}
+
+.viva-intro__container-text{
+    flex-basis: 55%;
+    margin:0;
+}
+.viva-logo__container-image{
+    flex-basis: 35%;
+    margin: 0;
+}
+.viva-logo__container-image img{
+    width:100%;
+    height: auto;
+    margin: 0;
+}
+.viva-intro a{
+    margin-top: 48px;
+}
+/*----------------------Viva Discovery Phase Selectors-------------------------*/
+.viva-survey__findings div{
+    flex-basis: 30%;
+    text-align: center;
+}
+.viva-survey__findings ul, .viva-survey__findings p{
+    margin-top: 24px;
+    text-align:left;
+    line-height: 1.6;
+    font-size: 16px;
+    list-style: none;  
+}
+.viva-survey__findings ul, .viva-survey__findings ul li{
+    margin-left: 0; 
+    padding-left: 0;
+    margin: 1em 0;
+}
+.viva-survey__findings a{
+    margin-bottom: 10%;
+    margin-top: 5%;
+}
+/*----------------------Viva Information Architecture Selectors-------------------------*/
+/*<<<<<Wireframes Selectors>>>>>*/
+.viva-wireframes__intro-container{
+    width: 75%;
+    margin:0 auto;
+    margin-top: 8%;
+    margin-bottom: 5%;
+    text-align: left;
+}
+/*----------------------Viva Mockups Selectors-------------------------*/
+.mockups__section-title{
+    margin: 5% 0;
+}
+/*<<<<<Conclusion Selectors>>>>>*/
+
+.mockups__text{
+    flex-basis: 50%;
+    margin:0;
+}
+.mockups__image{
+    flex-basis: 45%;
+    margin:0;
+}
+.mockups__image img{
+    width: 460px;
+    height: auto;
+    margin: 0;
 }
 /*////////////////////////////////FOOTER SELECTORS//////////////////////////////////*/
 .footer{
@@ -1000,6 +1097,26 @@ PHONE SELECTORS
         margin:0;
     }
     .busy-bus__container-image{
+        text-align: center;
+        width: 100%;
+        margin:0;
+    } 
+    /*-------------------VIVA SELECTORS -------------------*/
+    .viva{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    }
+    .index-viva-flex{
+        display: flex;
+        flex-direction: column; 
+    }
+    .viva__container-text{
+        text-align: center;
+        width: 100%;
+        margin:0;
+    }
+    .viva__container-image{
         text-align: center;
         width: 100%;
         margin:0;
@@ -1331,7 +1448,7 @@ PHONE SELECTORS
     }
     .survey__findings-bus-competitors img{
         margin-top: 16%;
-    }
+    } 
     /*<<<<<Busy Bus User Stories and User Flows Selectors>>>>>*/
     table{
         display: none;
@@ -1383,6 +1500,49 @@ PHONE SELECTORS
     .hifi-prototypes__first-iteration-text{
         flex-basis: 100%;
         text-align: left;
+    }
+    /*/////////////////////////////VIVA SELECTORS////////////////////////////*/
+    /*----------------------Viva Intro Selectors-------------------------*/
+    .viva-intro{
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+    }
+    .viva-intro__flex{
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;  
+    }   
+    /*<<<<<User Surveys Selectors>>>>>*/
+    .viva-survey__findings{
+        width: 100%;
+        height:auto;
+    }
+    .viva-survey__findings-flex{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .survey__findings-viva-trends img{
+        margin-top: 16%;
+    }
+    .survey__findings-viva-research img{
+        margin-top: 16%;
+    } 
+    /*----------------------Mockups Selectors-------------------------*/
+    .mockups__section-title{
+        text-align: center;
+    }
+    .mockups-flex{
+        display: flex;
+        flex-direction: column;
+        text-align: left;  
+    }
+    .mockups__image{
+        text-align: center;
+    }
+    .mockups__image img{
+        width: 100%;
     }
     /*/////////////////////////////FOOTER SELECTORS////////////////////////////*/
     .footer__container{
