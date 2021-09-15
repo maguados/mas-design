@@ -187,7 +187,7 @@ p{
 .busy-bus a{
     margin-top: 48px;
 }
-/*-------------------BUSY BUS SELECTORS -------------------*/
+/*-------------------VIVA SELECTORS -------------------*/
 .viva__container-image{
     flex-basis: 45%;
     margin: 0;
@@ -202,6 +202,23 @@ p{
     margin:0;
 }
 .viva a{
+    margin-top: 48px;
+}
+/*-------------------TROT SELECTORS -------------------*/
+.pawpals__container-text{
+    flex-basis: 50%;
+    margin:0;
+}
+.pawpals__container-image{
+    flex-basis: 45%;
+    margin: 0;
+}
+.pawpals__container-image img{
+    width:100%;
+    height: auto;
+    margin: 0;
+}
+.pawpals a{
     margin-top: 48px;
 }
 /*-------------------ABOUT SELECTORS -------------------*/
@@ -951,7 +968,6 @@ table tr:last-child td:last-child {
     margin: 5% 0;
 }
 /*<<<<<Conclusion Selectors>>>>>*/
-
 .mockups__text{
     flex-basis: 50%;
     margin:0;
@@ -964,6 +980,71 @@ table tr:last-child td:last-child {
     width: 460px;
     height: auto;
     margin: 0;
+}
+.mockups__desktop-intro{
+    width: 55%;
+    margin:0 auto;
+    text-align: left;
+}
+.mockups__desktop-images{
+    flex-basis: 30%;
+    text-align: center;
+}
+/*/////////////////////////////////PAWPALS CASE STUDY SELECTORS//////////////////////////////////*/
+/*----------------------PawPals Intro Selectors-------------------------*/
+.pawpals-intro{
+    margin-top: 160px;
+}
+
+.pawpals-intro__container-text{
+    flex-basis: 55%;
+    margin:0;
+}
+.pawpals-logo__container-image{
+    flex-basis: 35%;
+    margin: 0;
+}
+.pawpals-logo__container-image img{
+    width:100%;
+    height: auto;
+    margin: 0;
+}
+.pawpals-intro a{
+    margin-top: 48px;
+}
+/*----------------------PawPals Discovery Phase Selectors-------------------------*/
+.survey__intro-container ol{
+    display: table;
+    margin: 0 auto;
+}
+.pawpals-survey__findings div{
+    flex-basis: 30%;
+    text-align: center;
+}
+.pawpals-survey__findings ul, .pawpals-survey__findings p{
+    margin-top: 24px;
+    text-align:left;
+    line-height: 1.6;
+    font-size: 16px;
+    list-style: none;  
+}
+.pawpals-survey__findings ul, .pawpals-survey__findings ul li{
+    margin-left: 0; 
+    padding-left: 0;
+    margin: 1em 0;
+}
+.pawpals-survey__findings a{
+    margin-bottom: 10%;
+    margin-top: 5%;
+}
+/*----------------------PawPals Information Architecture Selectors-------------------------*/
+/*<<<<<Wireframes Selectors>>>>>*/
+.pawpals-wireframes__intro-container{
+    width: 75%;
+    margin:0 auto;
+    margin-top: 8%;
+    margin-bottom: 5%;
+    text-align: left;
 }
 /*////////////////////////////////FOOTER SELECTORS//////////////////////////////////*/
 .footer{
@@ -1121,6 +1202,26 @@ PHONE SELECTORS
         width: 100%;
         margin:0;
     } 
+    /*-------------------PAWPALS SELECTORS -------------------*/
+    .pawpals{
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+        }
+        .index-pawpals-flex{
+            display: flex;
+            flex-direction: column; 
+        }
+        .pawpals__container-text{
+            text-align: center;
+            width: 100%;
+            margin:0;
+        }
+        .pawpals__container-image{
+            text-align: center;
+            width: 100%;
+            margin:0;
+        } 
     /*-------------------ABOUT SELECTORS -------------------*/
     .index-about-flex{
         display: flex;
@@ -1529,6 +1630,10 @@ PHONE SELECTORS
     .survey__findings-viva-research img{
         margin-top: 16%;
     } 
+    /*<<<<<Wireframes Selectors>>>>>*/
+    .viva-wireframes__intro-container{
+        width:100%;
+    }
     /*----------------------Mockups Selectors-------------------------*/
     .mockups__section-title{
         text-align: center;
@@ -1543,6 +1648,38 @@ PHONE SELECTORS
     }
     .mockups__image img{
         width: 100%;
+    }
+    /*/////////////////////////////PAWPALS SELECTORS////////////////////////////*/
+    /*----------------------PawPals Intro Selectors-------------------------*/
+    .pawpals-intro{
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+    }
+    .pawpals-intro__flex{
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;  
+    }   
+    /*<<<<<User Surveys Selectors>>>>>*/
+    .pawpals-survey__findings{
+        width: 100%;
+        height:auto;
+    }
+    .pawpals-survey__findings-flex{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .survey__findings-pawpals-trends img{
+        margin-top: 16%;
+    }
+    .survey__findings-pawpals-research img{
+        margin-top: 16%;
+    }
+    /*<<<<<Wireframes Selectors>>>>>*/
+    .pawpals-wireframes__intro-container{
+        width:100%;
     }
     /*/////////////////////////////FOOTER SELECTORS////////////////////////////*/
     .footer__container{
