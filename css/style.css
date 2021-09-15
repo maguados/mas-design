@@ -1203,25 +1203,31 @@ PHONE SELECTORS
         margin:0;
     } 
     /*-------------------PAWPALS SELECTORS -------------------*/
+    /*.index-trot-flex{
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center; 
+    }*/
     .pawpals{
         display: flex;
         flex-direction: column;
         flex-basis: 100%;
         }
-        .index-pawpals-flex{
-            display: flex;
-            flex-direction: column; 
-        }
-        .pawpals__container-text{
-            text-align: center;
-            width: 100%;
-            margin:0;
-        }
-        .pawpals__container-image{
-            text-align: center;
-            width: 100%;
-            margin:0;
-        } 
+    .index-pawpals-flex{
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .pawpals__container-text{
+        text-align: center;
+        width: 100%;
+        margin:0;
+    }
+    .pawpals__container-image{
+        text-align: center;
+        width: 100%;
+        margin:0;
+    } 
     /*-------------------ABOUT SELECTORS -------------------*/
     .index-about-flex{
         display: flex;
